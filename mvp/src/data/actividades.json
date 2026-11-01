@@ -28,6 +28,8 @@
       "organizador": "USM Viña del Mar · Mes de la salud mental",
       "cupos": null,
       "descripcion": "Dos sesiones: martes 27 de octubre y martes 3 de noviembre, de 12:20 a 13:20 horas, en la Sala H106. Materiales incluidos. Requiere inscripción previa.",
+      "afiche": "/actividades/fidget-toy.png",
+      "afícheAlt": "Afiche del taller «¡Crea tu propio fidget toy!»: dos manos sostienen juguetes sensoriales con forma de huevo. Actividad del mes de la salud mental.",
       "enlace": "https://tinyurl.com/tallerfidgettoy"
     },
     {
@@ -39,7 +41,9 @@
       "modalidad": "Presencial",
       "organizador": "Área Vida Universitaria",
       "cupos": null,
-      "descripcion": "Conceptos básicos de electricidad, seguridad e instalaciones para el hogar. Sesiones: 30 de octubre a las 12:30 y 7 de noviembre a las 10:30. Abierto a todo público, gratuito y sin experiencia previa. Cupos limitados (cantidad no informada)."
+      "descripcion": "Conceptos básicos de electricidad, seguridad e instalaciones para el hogar. Sesiones: 30 de octubre a las 12:30 y 7 de noviembre a las 10:30. Abierto a todo público, gratuito y sin experiencia previa. Cupos limitados (cantidad no informada).",
+      "afiche": "/actividades/instalaciones-electricas.png",
+      "afícheAlt": "Afiche del taller de instalaciones eléctricas domiciliarias: fotos de cableado y herramientas sobre fondo azul."
     },
     {
       "id": "taller-autocuidado-bienestar",

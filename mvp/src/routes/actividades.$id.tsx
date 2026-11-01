@@ -80,7 +80,7 @@ function Detalle() {
             {a.publico && <Fila k="Público">{a.publico}</Fila>}
             {a.tematica && <Fila k="Temática">{a.tematica}</Fila>}
             <Fila k="Organizador">{a.organizador}</Fila>
-            <Fila k="Cupos">{a.cupos ?? "No informado"}</Fila>
+            {a.cupos != null && <Fila k="Cupos">{a.cupos}</Fila>}
             {a.contacto && <Fila k="Consultas a">{a.contacto}</Fila>}
           </dl>
         </section>

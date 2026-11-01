@@ -141,22 +141,15 @@
 @utility ramo {
   display: flex; align-items: center; width: 100%; height: 5rem; padding: 0.4rem 0.6rem;
   font-size: 0.75rem; line-height: 1rem; font-weight: 500; overflow-wrap: anywhere;
-  background: var(--card); color: var(--card-foreground);
-  border: 1px solid var(--border); border-left: 4px solid var(--primary); border-radius: 0.375rem;
-}
-@utility ramo-electivo {
-  border-style: dashed; border-left-style: dashed; border-left-color: var(--muted-foreground);
-  background: var(--secondary); color: var(--muted-foreground);
-}
-@utility ramo-taller {
-  border-left-color: var(--accent); background: color-mix(in oklab, var(--accent) 14%, var(--card));
+  background: color-mix(in oklab, var(--area, transparent) 16%, var(--card)); color: var(--card-foreground);
+  border: 1px solid var(--foreground); border-left: 6px solid var(--area, var(--foreground)); border-radius: 0.375rem;
 }
 @utility ramo-vacio {
   border-style: dashed; color: var(--muted-foreground); font-style: italic;
 }
 @utility ramo-leyenda {
   display: inline-block; width: 3rem; height: 1.75rem; flex-shrink: 0; border-radius: 0.375rem;
-  border: 1px solid var(--border); border-left: 4px solid var(--primary); background: var(--card);
+  border: 1px solid var(--foreground); border-left: 6px solid var(--area, var(--foreground)); background: color-mix(in oklab, var(--area, transparent) 16%, var(--card));
 }
 @utility chip {
   display: inline-flex; align-items: center; padding: 0.35rem 0.8rem; border-radius: 999px;

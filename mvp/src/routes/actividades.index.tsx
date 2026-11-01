@@ -40,15 +40,20 @@ function Actividades() {
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {lista.map((a) => (
               <li key={a.id}>
-                <Link to="/actividades/$id" params={{ id: a.id }} className="card-box flex h-full flex-col gap-2 p-3 hover:border-primary">
+                <Link to="/actividades/$id" params={{ id: a.id }} className="card-box flex h-full flex-col overflow-hidden hover:border-primary">
+                  {a.afiche ? (
+                    <img src={a.afiche} alt="" loading="lazy" className="h-40 w-full object-cover object-[center_30%]" />
+                  ) : (
+                    <div aria-hidden="true" className="h-40 w-full bg-primary/10" />
+                  )}
+                  <div className="flex flex-1 flex-col gap-2 p-3">
                   <span className="text-sm font-bold text-primary">{formatoFecha(a.inicio, a.fin)}</span>
                   <span className="font-semibold leading-snug">{a.titulo}</span>
-                  {normalizarSede(a.sede) !== "Online" && <SedeBadge sede={a.sede} />}
-                  <dl className="mt-auto grid grid-cols-2 gap-x-2 text-xs">
-                    <dt className="text-muted-foreground">Modalidad</dt><dd>{a.modalidad}</dd>
-                    <dt className="text-muted-foreground">Organiza</dt><dd>{a.organizador}</dd>
-                    <dt className="text-muted-foreground">Cupos</dt><dd>{a.cupos ?? "No informado"}</dd>
-                  </dl>
+                  <div className="mt-auto flex flex-wrap items-center gap-2 text-xs">
+                    {normalizarSede(a.sede) !== "Online" && <SedeBadge sede={a.sede} />}
+                    <span className="text-muted-foreground">{a.modalidad}</span>
+                  </div>
+                  </div>
                 </Link>
               </li>
             ))}

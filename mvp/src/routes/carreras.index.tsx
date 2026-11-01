@@ -36,6 +36,15 @@ function Listado() {
     [q, campus, area],
   );
 
+  const grupos = useMemo(() => {
+    const m = new Map<string, typeof carreras>();
+    for (const c of lista) m.set(c.nombre, [...(m.get(c.nombre) ?? []), c]);
+    return [...m.entries()].map(([nombre, variantes]) => ({
+      nombre,
+      variantes: [...variantes].sort((a, b) => ordenSede(campusDe(a)[0] ?? "") - ordenSede(campusDe(b)[0] ?? "")),
+    }));
+  }, [lista]);
+
   return (
     <Layout>
       <div className="mx-auto max-w-6xl px-4 py-6">
@@ -48,18 +57,24 @@ function Listado() {
           <ChipGroup label="Sede/Campus" opciones={campusList} valor={campus} onChange={setCampus} />
           <ChipGroup label="Área" opciones={areas} valor={area} onChange={setArea} />
         </div>
-        <p className="mt-4 text-sm text-muted-foreground" aria-live="polite">{lista.length} de {carreras.length} carreras</p>
+        <p className="mt-4 text-sm text-muted-foreground" aria-live="polite">{grupos.length} carreras ({lista.length} de {carreras.length} opciones de ingreso)</p>
         <ul className="mt-2 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {lista.map((c) => (
-            <li key={c.codigoDemre}>
-              <Link to="/carreras/$codigo" params={{ codigo: c.codigoDemre }} className="card-box flex h-full flex-col gap-2 p-4 hover:border-primary">
-                <span className="text-xs font-semibold text-muted-foreground">Código DEMRE {c.codigoDemre}</span>
-                <span className="font-display text-lg font-semibold text-primary">{c.nombre}</span>
-                <SedeBadges sedes={campusDe(c)} />
-                <span className="mt-auto text-sm">
-                  Mínimo selección 2027: {c.minimoSeleccion2027 ?? <NoDisponible />}
-                </span>
-              </Link>
+          {grupos.map((g) => (
+            <li key={g.nombre} className="card-box flex h-full flex-col p-4">
+              <h2 className="font-display text-lg font-semibold text-primary">{g.nombre}</h2>
+              <ul className="mt-2 divide-y">
+                {g.variantes.map((c) => (
+                  <li key={c.codigoDemre}>
+                    <Link to="/carreras/$codigo" params={{ codigo: c.codigoDemre }} className="flex flex-col gap-1 py-2 hover:bg-muted/50">
+                      <SedeBadges sedes={campusDe(c)} />
+                      <span className="text-sm">
+                        <span className="text-muted-foreground">Código DEMRE {c.codigoDemre} · Mínimo selección 2027:</span>{" "}
+                        <span className="font-semibold">{c.minimoSeleccion2027 ?? <NoDisponible />}</span>
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </li>
           ))}
         </ul>
