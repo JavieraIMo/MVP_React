@@ -6,7 +6,6 @@ Este repositorio contiene el Producto Mínimo Viable desarrollado para el curso 
 * **Integrantes:** Javiera Ibaca - Fernanda López - Lucas Morrison
 * **Asignatura:** Diseño de Interfaces Usuarias (INF-295)
 * **Entrega:** Tarea 10 - MVP en React
-* **Fecha de entrega:** 02 de Noviembre de 2026
 
 ## Tecnologías Utilizadas
 * **Frontend:** React (Vite / Create React App)
