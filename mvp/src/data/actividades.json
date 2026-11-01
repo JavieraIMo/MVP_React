@@ -1,3 +1,131 @@
 {
-  "actividades": []
+  "actividades": [
+    {
+      "id": "maggi-rust-vitacura",
+      "titulo": "Concierto de la cellista austriaca Maggi Rust",
+      "inicio": "2026-10-22",
+      "fin": "2026-11-12",
+      "sede": "Campus Vitacura",
+      "modalidad": "Presencial",
+      "organizador": "USM Campus Vitacura",
+      "cupos": null,
+      "descripcion": "La cellista y cantante austriaca Maggi Rust se presentará en el Campus Vitacura. El sitio original informa solo el rango de fechas; los horarios no están publicados en texto."
+    },
+    {
+      "id": "taller-fidget-toy",
+      "titulo": "Taller «¡Crea tu propio fidget toy!»: un apoyo sensorial",
+      "inicio": "2026-10-27T12:20",
+      "fin": "2026-11-03",
+      "sede": "Sede Viña del Mar",
+      "modalidad": "Presencial",
+      "organizador": "USM Viña del Mar · Mes de la salud mental",
+      "cupos": null,
+      "descripcion": "Dos sesiones: martes 27 de octubre y martes 3 de noviembre, de 12:20 a 13:20 horas, en la Sala H106. Materiales incluidos. Requiere inscripción previa.",
+      "enlace": "https://tinyurl.com/tallerfidgettoy"
+    },
+    {
+      "id": "taller-instalaciones-electricas",
+      "titulo": "Taller de Instalaciones Eléctricas Domiciliarias",
+      "inicio": "2026-10-30T12:30",
+      "fin": "2026-11-07",
+      "sede": "Sede Viña del Mar",
+      "modalidad": "Presencial",
+      "organizador": "Área Vida Universitaria",
+      "cupos": null,
+      "descripcion": "Conceptos básicos de electricidad, seguridad e instalaciones para el hogar. Sesiones: 30 de octubre a las 12:30 y 7 de noviembre a las 10:30. Abierto a todo público, gratuito y sin experiencia previa. Cupos limitados (cantidad no informada)."
+    },
+    {
+      "id": "taller-autocuidado-bienestar",
+      "titulo": "Taller «Autocuidado y bienestar emocional para estudiantes universitarios»",
+      "inicio": "2026-11-02T09:40",
+      "fin": "2026-11-30",
+      "sede": "Campus Casa Central Valparaíso",
+      "modalidad": "Presencial",
+      "organizador": "Área Salud Mental",
+      "cupos": null,
+      "descripcion": "Cuatro sesiones: 2, 9, 23 y 30 de noviembre, de 09:40 a 10:50 horas, en la Sala C-203. Herramientas prácticas para cuidar el bienestar emocional durante la experiencia universitaria. Cupos limitados (cantidad no informada)."
+    },
+    {
+      "id": "charla-mineria-4-0",
+      "titulo": "Charla «Chile ante la nueva era de la minería: convergencia tecnológica, capital humano y ecosistemas virtuales de innovación»",
+      "inicio": "2026-11-03T12:30",
+      "sede": "Sede Viña del Mar",
+      "modalidad": "Presencial",
+      "organizador": "Departamento de Mecánica y Laboratorio Virtual Industria 4.0",
+      "cupos": null,
+      "descripcion": "Martes 3 de noviembre, de 12:30 a 13:15 horas, en el Auditorio Principal. Expositor: Patricio Oportus. Para toda la comunidad."
+    },
+    {
+      "id": "panel-expertos-construccion",
+      "titulo": "Panel de Expertos – Semana del Dpto. de Construcción y Prevención de Riesgos",
+      "inicio": "2026-11-03T08:30",
+      "sede": "Sede Concepción",
+      "modalidad": "Presencial",
+      "organizador": "Departamento de Construcción y Prevención de Riesgos",
+      "cupos": null,
+      "descripcion": "Panel de expertos el 3 de noviembre a las 08:30, dentro de la Semana del Departamento de Construcción y Prevención de Riesgos 2026."
+    },
+    {
+      "id": "charla-magister-electronica",
+      "titulo": "Charla informativa Magíster en Ciencias de la Ingeniería Electrónica y Doctorado en Ingeniería Electrónica",
+      "inicio": "2026-11-03T12:30",
+      "sede": "Campus Casa Central Valparaíso",
+      "modalidad": "Presencial",
+      "organizador": "Departamento de Electrónica",
+      "cupos": null,
+      "descripcion": "Martes 3 de noviembre, 12:30 horas, en el Auditorio de Electrónica B-2.21. Programas, requisitos de admisión y becas para el primer semestre de 2027. Participación presencial y en línea."
+    },
+    {
+      "id": "feria-gobierno-en-terreno",
+      "titulo": "Feria Gobierno en Terreno 2026",
+      "inicio": "2026-11-03T10:00",
+      "sede": "Sede Viña del Mar",
+      "modalidad": "Presencial",
+      "organizador": "Delegación Presidencial Provincial de Marga Marga",
+      "cupos": null,
+      "descripcion": "Martes 3 de noviembre, de 10:00 a 14:00 horas, en el Canal Chacao, Av. Federico Santa María 6090, Viña del Mar."
+    },
+    {
+      "id": "taller-normas-tecnicas-patentes",
+      "titulo": "Taller «Búsqueda y uso de normas técnicas, marcas y patentes»",
+      "inicio": "2026-11-03T12:30",
+      "sede": "Online",
+      "modalidad": "Online",
+      "organizador": "Biblioteca USM",
+      "cupos": null,
+      "descripcion": "Martes 3 de noviembre, de 12:30 a 13:45 horas, por Teams. Requiere inscripción previa. Consultas: usat.biblioteca@usm.cl."
+    },
+    {
+      "id": "charlas-prev-2026",
+      "titulo": "Charlas PREV 2026: «Del aula a la profesión»",
+      "inicio": "2026-11-03T08:30",
+      "sede": "Sede Viña del Mar",
+      "modalidad": "Presencial",
+      "organizador": "Departamento de Construcción y Prevención de Riesgos",
+      "cupos": null,
+      "descripcion": "Seminario con experiencias reales de quienes estuvieron en tu lugar. Martes 3 de noviembre, 08:30 horas, en el Salón de Honor."
+    },
+    {
+      "id": "congreso-comites-paritarios",
+      "titulo": "XXVI Congreso de Comités Paritarios Universidades Chilenas «Aprender, conectar y avanzar»",
+      "inicio": "2026-11-04",
+      "fin": "2026-11-07",
+      "sede": "Campus Casa Central Valparaíso",
+      "modalidad": "Presencial",
+      "organizador": "USM · Asociación Chilena de Seguridad (ACHS)",
+      "cupos": null,
+      "descripcion": "Del 4 al 7 de noviembre en Casa Central, Av. España 1680, Valparaíso. Inscripciones hasta el 16 de octubre.",
+      "enlace": "https://dgdp.usm.cl/congreso-comites-paritarios"
+    },
+    {
+      "id": "crazy-legs-lindy-hop",
+      "titulo": "Crazy Legs llevará el ritmo del Lindy Hop al Campus San Joaquín",
+      "inicio": "2026-11-05",
+      "sede": "Campus San Joaquín",
+      "modalidad": "Presencial",
+      "organizador": "USM Campus San Joaquín",
+      "cupos": null,
+      "descripcion": "Presentación de Lindy Hop el 5 de noviembre. El sitio original no publica el horario en texto."
+    }
+  ]
 }
