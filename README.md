@@ -3,6 +3,7 @@
 Este repositorio contiene el Producto Mínimo Viable desarrollado para el curso de Diseño de Interfaces Usuarias. El objetivo principal es resolver las inconsistencias de usabilidad identificadas en las evaluaciones previas del portal de Admisión de la Universidad Técnica Federico Santa María (USM).
 
 ## Repositorio y Contexto
+* **Integrantes:** Javiera Ibaca - Fernanda López - Lucas Morrison
 * **Asignatura:** Diseño de Interfaces Usuarias (INF-295)
 * **Entrega:** Tarea 10 - MVP en React
 * **Fecha de entrega:** 02 de Noviembre de 2026
