@@ -120,6 +120,31 @@
   background: transparent; color: var(--primary); border: 1px solid var(--border);
   &:hover { background: var(--secondary); filter: none; }
 }
+@utility action-tile {
+  display: flex; flex-direction: column; gap: 0.35rem; padding: 1rem 1.25rem;
+  border-radius: var(--radius); background: var(--primary); color: var(--primary-foreground);
+  box-shadow: 0 2px 0 color-mix(in oklab, var(--primary) 60%, black);
+  transition: transform 0.1s, filter 0.1s;
+  &:hover { filter: brightness(1.2); transform: translateY(-1px); }
+  &:active { transform: translateY(1px); box-shadow: none; }
+}
+@utility action-tile-main {
+  background: var(--accent); color: var(--accent-foreground);
+  box-shadow: 0 2px 0 color-mix(in oklab, var(--accent) 60%, black);
+}
+@utility action-tile-title {
+  font-size: 1.125rem; font-weight: 700;
+}
+@utility action-tile-text {
+  font-size: 0.875rem; opacity: 0.9;
+}
+@utility chip {
+  display: inline-flex; align-items: center; padding: 0.35rem 0.8rem; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--card); color: var(--foreground);
+  font-size: 0.875rem; font-weight: 500;
+  &:hover { background: var(--secondary); }
+  &[aria-pressed="true"] { background: var(--primary); color: var(--primary-foreground); border-color: var(--primary); }
+}
 @utility card-box {
   background: var(--card); color: var(--card-foreground);
   border: 1px solid var(--border); border-radius: var(--radius);

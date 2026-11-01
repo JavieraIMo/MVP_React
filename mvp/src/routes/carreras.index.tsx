@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { Layout, NoDisponible, NotaReferencial, SedeBadges } from "@/components/app/Layout";
+import { ChipGroup, Layout, NoDisponible, NotaReferencial, SedeBadges } from "@/components/app/Layout";
 import { campusDe, carreras, ordenSede } from "@/lib/datos";
 
 export const Route = createFileRoute("/carreras/")({
@@ -40,25 +40,13 @@ function Listado() {
     <Layout>
       <div className="mx-auto max-w-6xl px-4 py-6">
         <h1 className="text-2xl font-bold text-primary">Carreras</h1>
-        <div className="mt-4 grid gap-3 sm:grid-cols-3">
-          <div>
-            <label htmlFor="q" className="text-sm font-medium">Buscar</label>
-            <input id="q" className="field mt-1" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Nombre o código DEMRE" />
-          </div>
-          <div>
-            <label htmlFor="campus" className="text-sm font-medium">Campus</label>
-            <select id="campus" className="field mt-1" value={campus} onChange={(e) => setCampus(e.target.value)}>
-              <option value="">Todos</option>
-              {campusList.map((c) => <option key={c}>{c}</option>)}
-            </select>
-          </div>
-          <div>
-            <label htmlFor="area" className="text-sm font-medium">Área</label>
-            <select id="area" className="field mt-1" value={area} onChange={(e) => setArea(e.target.value)}>
-              <option value="">Todas</option>
-              {areas.map((a) => <option key={a}>{a}</option>)}
-            </select>
-          </div>
+        <div className="mt-4 max-w-xl">
+          <label htmlFor="q" className="text-sm font-medium">Buscar por nombre o código DEMRE</label>
+          <input id="q" type="search" autoFocus className="field mt-1" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Ej: Informática o 15160" />
+        </div>
+        <div className="mt-3 space-y-3">
+          <ChipGroup label="Campus" opciones={campusList} valor={campus} onChange={setCampus} />
+          <ChipGroup label="Área" opciones={areas} valor={area} onChange={setArea} />
         </div>
         <p className="mt-4 text-sm text-muted-foreground" aria-live="polite">{lista.length} de {carreras.length} carreras</p>
         <ul className="mt-2 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

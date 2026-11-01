@@ -37,25 +37,21 @@ function Home() {
       </section>
 
       <div className="mx-auto max-w-6xl px-4">
-        <div className="mt-6 grid gap-4 sm:grid-cols-3">
-          <Link to="/simulador" className="card-box block border-l-4 border-l-accent p-5 hover:bg-secondary">
-            <h2 className="text-lg font-bold text-primary">Simular mi puntaje</h2>
-            <p className="mt-1 text-sm text-muted-foreground">Compara tu ponderado con el mínimo de selección 2027 de hasta 20 carreras.</p>
+        <div className="mt-6 grid gap-3 sm:grid-cols-3">
+          <Link to="/simulador" className="action-tile action-tile-main">
+            <span className="action-tile-title">Simular mi puntaje <span aria-hidden="true">→</span></span>
+            <span className="action-tile-text">Compara tu ponderado con el mínimo de selección 2027 de hasta 20 carreras.</span>
           </Link>
-          <Link to="/carreras" search={{ q: "" }} className="card-box block border-l-4 border-l-accent p-5 hover:bg-secondary">
-            <h2 className="text-lg font-bold text-primary">Explorar carreras</h2>
-            <p className="mt-1 text-sm text-muted-foreground">{carreras.length} carrera(s) cargadas, con malla, aranceles y código DEMRE en una ficha.</p>
+          <Link to="/carreras" search={{ q: "" }} className="action-tile">
+            <span className="action-tile-title">Explorar carreras <span aria-hidden="true">→</span></span>
+            <span className="action-tile-text">{carreras.length} carreras con código DEMRE, campus y mínimo de selección.</span>
           </Link>
-          <Link to="/actividades" className="card-box block border-l-4 border-l-accent p-5 hover:bg-secondary">
-            <h2 className="text-lg font-bold text-primary">Ver actividades</h2>
-            <p className="mt-1 text-sm text-muted-foreground">Ferias, charlas y visitas con fecha, sede y cupos a la vista.</p>
+          <Link to="/actividades" className="action-tile">
+            <span className="action-tile-title">Ver actividades <span aria-hidden="true">→</span></span>
+            <span className="action-tile-text">Charlas, talleres y ferias con fecha, sede y cupos.</span>
           </Link>
         </div>
 
-        <aside className="card-box mt-6 p-4 text-sm">
-          <h2 className="font-display font-semibold">Ranking institucional</h2>
-          <p className="mt-1 text-muted-foreground">Información de ranking no incluida en el dataset del proyecto.</p>
-        </aside>
         <div className="mt-6"><NotaReferencial /></div>
       </div>
     </Layout>

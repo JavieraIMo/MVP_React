@@ -10,11 +10,11 @@ const NAV = [
 ] as const;
 
 const REDES = [
-  { label: "Instagram", href: "https://www.instagram.com/usmchile/" },
-  { label: "Facebook", href: "https://www.facebook.com/usmchile" },
-  { label: "X", href: "https://x.com/usmchile" },
-  { label: "YouTube", href: "https://www.youtube.com/@usmchile" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/school/utfsm/" },
+  { label: "Instagram", href: "https://www.instagram.com/usantamaria/" },
+  { label: "Facebook", href: "https://www.facebook.com/usantamaria" },
+  { label: "X", href: "https://x.com/usantamaria" },
+  { label: "YouTube", href: "https://www.youtube.com/channel/UCr5rEvayXIC0YnJxDAWuWtQ" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/school/usantamaria/" },
 ];
 
 export function Layout({ children }: { children: ReactNode }) {
@@ -23,8 +23,9 @@ export function Layout({ children }: { children: ReactNode }) {
       <a href="#contenido" className="skip-link">Saltar al contenido</a>
       <header className="sticky top-0 z-30 border-b-4 border-accent bg-primary text-primary-foreground">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-4 py-3">
-          <Link to="/" className="font-display text-lg font-bold leading-tight">
-            Admisión USM <span className="font-normal opacity-80">· Orientador de carrera</span>
+          <Link to="/" className="flex items-center gap-3 font-display text-lg font-bold leading-tight">
+            <img src="/logo-usm.png" alt="Escudo de la Universidad Técnica Federico Santa María" width={44} height={40} className="h-10 w-auto shrink-0" />
+            <span>Admisión USM <span className="font-normal opacity-80">· Orientador de carrera</span></span>
           </Link>
           <nav aria-label="Principal" className="-mx-1 flex w-full gap-1 overflow-x-auto sm:w-auto">
             {NAV.map((n) => (
@@ -74,6 +75,19 @@ export function NotaReferencial() {
     <p role="note" className="rounded-md border-l-4 border-accent bg-secondary px-3 py-2 text-sm text-secondary-foreground">
       <strong>Datos referenciales · Admisión 2027.</strong> El puntaje real depende de la tabla oficial vigente.
     </p>
+  );
+}
+
+export function ChipGroup({ label, opciones, valor, onChange }: { label: string; opciones: string[]; valor: string; onChange: (v: string) => void }) {
+  return (
+    <div role="group" aria-label={label} className="flex flex-wrap items-center gap-2">
+      <span className="w-24 text-sm font-medium">{label}</span>
+      {["", ...opciones].map((o) => (
+        <button key={o || "todas"} type="button" className="chip" aria-pressed={valor === o} onClick={() => onChange(o)}>
+          {o || "Todas"}
+        </button>
+      ))}
+    </div>
   );
 }
 

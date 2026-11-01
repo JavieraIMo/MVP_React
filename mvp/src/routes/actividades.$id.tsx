@@ -32,7 +32,7 @@ function Detalle() {
             <dt className="text-muted-foreground">Sede</dt><dd><SedeBadge sede={a.sede} /></dd>
             <dt className="text-muted-foreground">Modalidad</dt><dd>{a.modalidad}</dd>
             <dt className="text-muted-foreground">Organizador</dt><dd>{a.organizador}</dd>
-            <dt className="text-muted-foreground">Cupos</dt><dd>{a.cupos ?? "Sin límite informado"}</dd>
+            <dt className="text-muted-foreground">Cupos</dt><dd>{a.cupos ?? "No informado"}</dd>
           </dl>
           {a.descripcion && <p className="mt-4">{a.descripcion}</p>}
           {a.enlace && <a href={a.enlace} target="_blank" rel="noreferrer" className="btn mt-4">Inscribirme</a>}
