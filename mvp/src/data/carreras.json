@@ -1,0 +1,1612 @@
+{
+  "ponderaciones": {
+    "conM2": {
+      "nem": 0.15,
+      "ranking": 0.2,
+      "m1": 0.35,
+      "m2": 0.1,
+      "lectora": 0.1,
+      "optativa": 0.1
+    },
+    "sinM2": {
+      "nem": 0.15,
+      "ranking": 0.25,
+      "m1": 0.4,
+      "lectora": 0.1,
+      "optativa": 0.1
+    }
+  },
+  "reglas": {
+    "minimoPostulacion": 485,
+    "escala": {
+      "min": 100,
+      "max": 1000
+    },
+    "maxPreferencias": 20,
+    "m2ObligatoriaExcepto": [
+      "Ingeniería Comercial"
+    ]
+  },
+  "carreras": [
+    {
+      "codigoDemre": "15380",
+      "nombre": "Arquitectura",
+      "campus": [
+        "Campus San Joaquín"
+      ],
+      "area": "Arquitectura y Construcción",
+      "exigeM2": false,
+      "titulo": "Arquitecto o Arquitecta",
+      "grado": "Licenciado/a en Arquitectura",
+      "duracion": "10 semestres (5 años)",
+      "regimen": "Diurno",
+      "arancel": 6920000,
+      "puntajePonderadoMinimo": 550.0,
+      "maximoSeleccion2027": 919.35,
+      "minimoSeleccion2027": 748.25,
+      "vacantes2027": 70,
+      "mc2027": null,
+      "perfilEgreso": "La carrera de Arquitectura de la USM permite dominar y aplicar conocimientos científico-tecnológicos avanzados para el diseño, evaluación y desarrollo del hábitat construido, promoviendo con ello el mejoramiento de la calidad de vida de las personas. Instalará, como tema central de su discurso, la preocupación por la intervención sustentable sobre el medio ambiente, el emprendimiento y la investigación disciplinar. Construirá un activo diálogo interdisciplinar vinculando de modo indisoluble, la creatividad e innovación arquitectónica con las ciencias de la ingeniería y la gestión de los recursos.",
+      "malla": {
+        "1": [
+          "Fundamentos de Proyecto",
+          "Conceptos y Análisis de Arquitectura y Ciudad",
+          "Geometría y Pensamiento Espacial",
+          "Fundamentos de la Física",
+          "Introducción al Cálculo para Arquitectura",
+          "Educación Física I"
+        ],
+        "2": [
+          "Contexto e Ideación de Proyecto",
+          "Introducción a la TSH de la Arquitectura",
+          "Geometría Descriptiva",
+          "Física del Entorno",
+          "Aplicaciones de Cálculo para Arquitectura",
+          "Educación Física II"
+        ],
+        "3": [
+          "Métodos de Proyecto",
+          "Teoría del Habitar",
+          "Lenguajes de Representación",
+          "Fundamentos de las Estructuras",
+          "Computación Arquitectónica",
+          "Expresión Oral y Escrita"
+        ],
+        "4": [
+          "Tectónica del Proyecto",
+          "Programa, Tipología y Organización",
+          "Expresión Gráfica",
+          "Sistemas Estructurales",
+          "Prototipado y Fabricación Digital",
+          "Comunicación Efectiva Español — Inglés I"
+        ],
+        "5": [
+          "Proyecto y Tecnología Arquitectónica",
+          "Paradigmas Urbano-Territoriales",
+          "Lógicas Constructivas Básicas",
+          "Diseño Pasivo y Confort Ambiental",
+          "Comunicación Efectiva Español — Inglés II"
+        ],
+        "6": [
+          "Proyecto Urbano",
+          "Intervenciones Urbano-Territoriales",
+          "Sistemas Sismorresistentes",
+          "Sostenibilidad y Certificación de Edificaciones",
+          "Comunicación Efectiva Español — Inglés III"
+        ],
+        "7": [
+          "Proyecto Sostenible",
+          "Electivo Disciplinar: Historia",
+          "Sistemas Constructivos Aplicados",
+          "Eficiencia Energética en Instalaciones y Tecnologías",
+          "Introducción a la Investigación"
+        ],
+        "8": [
+          "Desarrollo Territorial",
+          "Electivo Disciplinar: Gestión",
+          "Estructuras y Materiales",
+          "Investigación Básica y Aplicada",
+          "Electivo General"
+        ],
+        "9": [
+          "Anteproyecto de Titulación",
+          "Electivo Disciplinar",
+          "Introducción a la Metodología BIM",
+          "Proyecto de Investigación"
+        ],
+        "10": [
+          "Actividad de Titulación",
+          "Electivo Disciplinar",
+          "Gestión Profesional"
+        ]
+      }
+    },
+    {
+      "codigoDemre": "15180",
+      "nombre": "Arquitectura",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Arquitectura y Construcción",
+      "exigeM2": false,
+      "titulo": "Arquitecto o Arquitecta",
+      "grado": "Licenciado/a en Arquitectura",
+      "duracion": "10 semestres (5 años)",
+      "regimen": "Diurno",
+      "arancel": 6920000,
+      "puntajePonderadoMinimo": 550.0,
+      "maximoSeleccion2027": 904.25,
+      "minimoSeleccion2027": 705.95,
+      "vacantes2027": 80,
+      "mc2027": null,
+      "perfilEgreso": "La carrera de Arquitectura de la USM permite dominar y aplicar conocimientos científico-tecnológicos avanzados para el diseño, evaluación y desarrollo del hábitat construido, promoviendo con ello el mejoramiento de la calidad de vida de las personas. Instalará, como tema central de su discurso, la preocupación por la intervención sustentable sobre el medio ambiente, el emprendimiento y la investigación disciplinar. Construirá un activo diálogo interdisciplinar vinculando de modo indisoluble, la creatividad e innovación arquitectónica con las ciencias de la ingeniería y la gestión de los recursos.",
+      "malla": {
+        "1": [
+          "Fundamentos de Proyecto",
+          "Conceptos y Análisis de Arquitectura y Ciudad",
+          "Geometría y Pensamiento Espacial",
+          "Fundamentos de la Física",
+          "Introducción al Cálculo para Arquitectura",
+          "Educación Física I"
+        ],
+        "2": [
+          "Contexto e Ideación de Proyecto",
+          "Introducción a la TSH de la Arquitectura",
+          "Geometría Descriptiva",
+          "Física del Entorno",
+          "Aplicaciones de Cálculo para Arquitectura",
+          "Educación Física II"
+        ],
+        "3": [
+          "Métodos de Proyecto",
+          "Teoría del Habitar",
+          "Lenguajes de Representación",
+          "Fundamentos de las Estructuras",
+          "Computación Arquitectónica",
+          "Expresión Oral y Escrita"
+        ],
+        "4": [
+          "Tectónica del Proyecto",
+          "Programa, Tipología y Organización",
+          "Expresión Gráfica",
+          "Sistemas Estructurales",
+          "Prototipado y Fabricación Digital",
+          "Comunicación Efectiva Español — Inglés I"
+        ],
+        "5": [
+          "Proyecto y Tecnología Arquitectónica",
+          "Paradigmas Urbano-Territoriales",
+          "Lógicas Constructivas Básicas",
+          "Diseño Pasivo y Confort Ambiental",
+          "Comunicación Efectiva Español — Inglés II"
+        ],
+        "6": [
+          "Proyecto Urbano",
+          "Intervenciones Urbano-Territoriales",
+          "Sistemas Sismorresistentes",
+          "Sostenibilidad y Certificación de Edificaciones",
+          "Comunicación Efectiva Español — Inglés III"
+        ],
+        "7": [
+          "Proyecto Sostenible",
+          "Electivo Disciplinar: Historia",
+          "Sistemas Constructivos Aplicados",
+          "Eficiencia Energética en Instalaciones y Tecnologías",
+          "Introducción a la Investigación"
+        ],
+        "8": [
+          "Desarrollo Territorial",
+          "Electivo Disciplinar: Gestión",
+          "Estructuras y Materiales",
+          "Investigación Básica y Aplicada",
+          "Electivo General"
+        ],
+        "9": [
+          "Anteproyecto de Titulación",
+          "Electivo Disciplinar",
+          "Introducción a la Metodología BIM",
+          "Proyecto de Investigación"
+        ],
+        "10": [
+          "Actividad de Titulación",
+          "Electivo Disciplinar",
+          "Gestión Profesional"
+        ]
+      }
+    },
+    {
+      "codigoDemre": "15110",
+      "nombre": "Construcción Civil",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Arquitectura y Construcción",
+      "exigeM2": false,
+      "titulo": "Constructor Civil o Constructora Civil",
+      "grado": "Licenciado/a en Construcción Civil",
+      "duracion": "10 semestres (5 años)",
+      "regimen": "Diurno",
+      "arancel": 6370000,
+      "puntajePonderadoMinimo": 550.0,
+      "maximoSeleccion2027": 852.65,
+      "minimoSeleccion2027": 662.5,
+      "vacantes2027": 20,
+      "mc2027": 4,
+      "perfilEgreso": "El desarrollo del país demanda la construcción de infraestructura que contribuya a la calidad de vida de las personas y para ello se requiere del trabajo de profesionales de excelencia, innovadores y con espíritu emprendedor. Por eso, la carrera de Construcción Civil en la Universidad Técnica Federico Santa María entrega una sólida formación en ciencia y tecnología para desenvolverse en el ámbito de la administración y la gestión de proyectos de edificación, montaje industrial y obras civiles. Su perfil de enseñanza integral le entrega todas las herramientas para participar de forma eficiente en los procesos de construcción y para desarrollarse en el mundo empresarial.",
+      "malla": {
+        "1": [
+          "Introducción a la Ingeniería",
+          "Programación",
+          "Introducción a la Física",
+          "Humanístico I",
+          "Matemática I",
+          "Educación Física I"
+        ],
+        "2": [
+          "Física Básica I",
+          "Humanístico II",
+          "Matemática II",
+          "Educación Física II",
+          "Química y Sociedad"
+        ],
+        "3": [
+          "Física Básica II",
+          "Geometría Descriptiva",
+          "Matemática III",
+          "Humanístico III",
+          "Estructuras I",
+          "Deportes"
+        ],
+        "4": [
+          "Física Básica III",
+          "Estructuras II",
+          "Matemática IV",
+          "Materiales de Construcción I",
+          "Dibujo de Construcción",
+          "Inglés Científico Tecnológico I"
+        ],
+        "5": [
+          "Estadística",
+          "Tecnología de la Madera y Laboratorio",
+          "Equipos de Construcción",
+          "Topografía y Taller",
+          "Tecnología del Hormigón y Laboratorio"
+        ],
+        "6": [
+          "Economía I",
+          "Hormigón Armado",
+          "Estructuras Madera y Acero",
+          "Materiales de Construcción II",
+          "Hidráulica",
+          "Inglés Científico Tecnológico II"
+        ],
+        "7": [
+          "Construcción I",
+          "Mecánica de Suelos I y Laboratorio",
+          "Construcciones Sismorresistentes",
+          "Ingeniería Hidráulica",
+          "Economía II"
+        ],
+        "8": [
+          "Construcción II",
+          "Obras Sanitarias",
+          "Construcciones Industriales",
+          "Seminario de Seguridad Industrial",
+          "Mecánica de Suelos II y Laboratorio",
+          "Vialidad I y Laboratorio"
+        ],
+        "9": [
+          "Administración en Construcción",
+          "Instalaciones en Edificaciones",
+          "Construcción Obras Civiles",
+          "Propuestas y Licitaciones",
+          "Historia de la Construcción",
+          "Vialidad II y Laboratorio"
+        ],
+        "10": [
+          "Administración de Obras",
+          "Legislación de la Construcción",
+          "Construcción y Medio Ambiente",
+          "Proyectos Inmobiliarios",
+          "Gestión Financiera de Obras",
+          "Seminario de Tasaciones"
+        ]
+      }
+    },
+    {
+      "codigoDemre": "15151",
+      "nombre": "Ingeniería Civil Ambiental",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 894.75,
+      "minimoSeleccion2027": 695.85,
+      "vacantes2027": 30,
+      "mc2027": 3,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15312",
+      "nombre": "Ingeniería Civil de Minas",
+      "campus": [
+        "Campus San Joaquín"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "Ingeniero Civil de Minas o Ingeniera Civil de Minas",
+      "grado": "Licenciado/a en Ciencias de la Ingeniería de Minas",
+      "duracion": "10 semestres (5 años)",
+      "regimen": "Diurno",
+      "arancel": 7540000,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 909.9,
+      "minimoSeleccion2027": 805.7,
+      "vacantes2027": 100,
+      "mc2027": 8,
+      "perfilEgreso": "El (La) titulado (a) de Ingeniería Civil de Minas de la Universidad Técnica Federico Santa María es capaz de diseñar soluciones innovadoras y sostenibles para problemas complejos del sector minero. Aplica conocimientos en geomecánica, evaluación de yacimientos, explotación minera y procesamiento de minerales. Participa en el diseño, modelado y evaluación de procesos y operaciones mineras, utilizando ciencias básicas, ingeniería y fundamentos económicos y administrativos, contribuyendo a la optimización de proyectos de ingeniería. Está preparado para colaborar en operaciones mineras, integrando equipos multidisciplinarios y aplicando normativas legales y principios de sostenibilidad.\n\nSu capacidad para resolver problemas, optimizar procesos y asegurar el correcto funcionamiento de operaciones mineras le permitirá contribuir al desarrollo eficiente y sostenible del sector. El (La) Ingeniero (a) Civil de Minas de la Universidad Técnica Federico Santa María destaca por su compromiso transversal con la calidad, lo cual le permite desenvolverse con excelencia en el campo laboral, comunicándose de manera efectiva tanto en español como en inglés. Por otra parte, promueve el autocuidado, autodesarrollo y la autogestión a través de un estilo de vida saludable, actuando siempre con una responsabilidad social y ética acorde a los principios inherentes a su profesión y en coherencia con el legado testamentario de Don Federico Santa María.",
+      "malla": {
+        "1": [
+          "Comunicación Efectiva en Español / Inglés I",
+          "Educación Física I",
+          "Proyecto Inicial",
+          "Introducción a la Física",
+          "Introducción al Cálculo",
+          "Álgebra y Geometría"
+        ],
+        "2": [
+          "Comunicación Efectiva en Español / Inglés II",
+          "Educación Física II",
+          "Introducción a la Programación",
+          "Física General Mecánica",
+          "Cálculo en una Variable",
+          "Álgebra Lineal"
+        ],
+        "3": [
+          "Análisis Crítico de Texto",
+          "Introducción a la Minería",
+          "Cálculo en Varias Variables",
+          "Calor y Ondas",
+          "Química para Ingenieros",
+          "Ecuaciones Diferenciales"
+        ],
+        "4": [
+          "Comunicación Efectiva en Español / Inglés III",
+          "Métodos de Explotación",
+          "Geología para Ingenieros",
+          "Electricidad y Magnetismo",
+          "Probabilidad y Estadística",
+          "Optimización"
+        ],
+        "5": [
+          "Responsabilidad Social y Ética mediante Aprendizaje + Servicio",
+          "Operaciones Unitarias en Minería",
+          "Mecánica de Rocas",
+          "Geomática",
+          "Ciencia de Datos",
+          "Administración y Sostenibilidad Organizacional"
+        ],
+        "6": [
+          "Comunicación Efectiva en Español / Inglés IV",
+          "Fluodinámica en Minería",
+          "Ingeniería de Rocas",
+          "Procesamiento de Minerales",
+          "Evaluación de Yacimientos",
+          "Ingeniería Económica"
+        ],
+        "7": [
+          "Inglés Disciplinar",
+          "Ingeniería de Medios Granulares",
+          "Ventilación y Servicios Mineros",
+          "Procesos Metalúrgicos",
+          "Modelamiento Numérico en Mecánica de Rocas",
+          "Planificación y Diseño de Minas a Cielo Abierto"
+        ],
+        "8": [
+          "Planificación y Diseño de Minas Subterráneas",
+          "Modelación y Simulación en Minería",
+          "Electivo Disciplinar",
+          "Procesos Alternativos en Metalurgia",
+          "Gestión de Residuos, Aguas y Energía en Minería",
+          "Sustentabilidad, Comunidades y Medio Ambiente"
+        ],
+        "9": [
+          "Electivo",
+          "Taller de Proyecto Minero a Cielo Abierto",
+          "Economía de Minerales",
+          "Actividad de Titulación I",
+          "Innovación y Emprendimiento en Minería",
+          "Gestión de Operaciones y Proyectos Mineros"
+        ],
+        "10": [
+          "Electivo",
+          "Taller de Proyecto Minero Subterráneo",
+          "Legislación y Seguridad Minera",
+          "Actividad de Titulación II",
+          "Innovaciones Tecnológicas en la Minería"
+        ]
+      }
+    },
+    {
+      "codigoDemre": "15130",
+      "nombre": "Ingeniería Civil Eléctrica",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "Ingeniero Civil Electricista o Ingeniera Civil Electricista",
+      "grado": "Licenciado/a en Ciencias de la Ingeniería Eléctrica",
+      "duracion": "10 semestres (5 años)",
+      "regimen": "Diurno",
+      "arancel": 7540000,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 970.1,
+      "minimoSeleccion2027": 781.25,
+      "vacantes2027": 60,
+      "mc2027": 6,
+      "perfilEgreso": "El/la Ingeniero/a Civil Electricista de la Universidad Técnica Federico Santa María resuelve problemas de ingeniería, analizando e integrando información técnica proveniente de la teoría y las mediciones, definiendo alternativas viables y formulando proyectos de ingeniería eléctrica que incluyen soluciones sostenibles e innovadoras, aplicando conocimientos de las ciencias básicas y ciencias de la ingeniería, utilizando herramientas especializadas de aplicaciones y software. Este profesional tiene la capacidad de analizar sistemas de energía y potencia incorporando perspectivas a corto, mediano y largo plazo para las variables consumo, oferta energética y desarrollo tecnológico. Además, está habilitado para planificar y gestionar el desarrollo, operación y mantenimiento de estos sistemas, considerando aspectos específicos de su infraestructura y equipamiento eléctrico. El/La Ingeniero/a Civil Electricista tiene la capacidad de identificar el impacto de sus propuestas en el contexto de la organización, las personas y el medio ambiente, y se asegura que estas aporten al cumplimiento de los objetivos definidos tanto en el ámbito técnico-económico como en el de gestión, considerando los marcos regulatorios y estándares de calidad nacionales e internacionales relevantes para el sector.\n\nSu sólida formación le permite desenvolverse en la industria, organismos públicos y privados e iniciativas de emprendimiento, desempeñándose en las áreas de proyectos, planificación, ingeniería de detalle, instalación, operación y mantenimiento de componentes y sistemas eléctricos. Asimismo, este profesional forma parte de equipos de trabajo que promuevan la colaboración entre disciplinas y áreas STEM. El/La Ingeniero/a Civil Electricista destaca por su compromiso transversal con la calidad, lo cual le permite desenvolverse con excelencia en el campo laboral, comunicándose de manera efectiva tanto en español como en inglés. Por otra parte, promueve el autocuidado, el autodesarrollo y la autogestión a través de un estilo de vida saludable, actuando siempre con una responsabilidad social y ética acorde a los principios inherentes a su profesión y en coherencia con el legado testamentario de Don Federico Santa María.",
+      "malla": {
+        "1": [
+          "Comunicación Efectiva en Español / Inglés I",
+          "Educación Física I",
+          "Proyecto Inicial",
+          "Introducción a la Física",
+          "Introducción al Cálculo",
+          "Álgebra y Geometría"
+        ],
+        "2": [
+          "Comunicación Efectiva en Español / Inglés II",
+          "Educación Física II",
+          "Introducción a la Programación",
+          "Física General Mecánica",
+          "Cálculo en una Variable",
+          "Álgebra Lineal"
+        ],
+        "3": [
+          "Análisis Crítico de Texto",
+          "Elementos de Mecánica y Resistencia de Materiales",
+          "Circuitos Eléctricos I",
+          "Electricidad y Magnetismo",
+          "Cálculo en Varias Variables",
+          "Ecuaciones Diferenciales Elementales"
+        ],
+        "4": [
+          "Comunicación Efectiva en Español / Inglés III",
+          "Estadística Computacional",
+          "Circuitos Eléctricos II",
+          "Teoría Electromagnética",
+          "Sistemas Dinámicos",
+          "Calor y Ondas"
+        ],
+        "5": [
+          "Práctica en Acción Comunitaria",
+          "Administración y Sostenibilidad Organizacional",
+          "Fundamentos de Calor y Fluidos",
+          "Control Automático de Sistemas Eléctricos",
+          "Electrónica General",
+          "Modelación de Equipamiento Eléctrico"
+        ],
+        "6": [
+          "Comunicación Efectiva en Español / Inglés IV",
+          "Economía I-A",
+          "Laboratorio de Circuitos Eléctricos",
+          "Electrónica de Potencia",
+          "Fundamentos de Máquinas Eléctricas",
+          "Simulación Computacional"
+        ],
+        "7": [
+          "Inglés Disciplinar",
+          "Ingeniería Económica",
+          "Investigación de Operaciones",
+          "Alta Tensión",
+          "Máquinas y Accionamientos Eléctricos",
+          "Sistemas de Energía y Potencia"
+        ],
+        "8": [
+          "Taller de Ingeniería",
+          "Gestión de Proyectos",
+          "Ingeniería de Plantas Industriales",
+          "Laboratorio de Alta Tensión",
+          "Laboratorio de Máquinas y Accionamientos Eléctricos",
+          "Sistemas de Distribución de Energía Eléctrica"
+        ],
+        "9": [
+          "Gestión de la Innovación y Emprendimiento",
+          "Proyectos Eléctricos",
+          "Integración de Energías Renovables",
+          "Regulación y Mercado del Sector Eléctrico",
+          "Operación y Control de Sistemas Eléctricos",
+          "Electivo"
+        ],
+        "10": [
+          "Electivo",
+          "Electivo",
+          "Proyecto de Título"
+        ]
+      }
+    },
+    {
+      "codigoDemre": "15330",
+      "nombre": "Ingeniería Civil Eléctrica",
+      "campus": [
+        "Campus San Joaquín"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "Ingeniero Civil Electricista o Ingeniera Civil Electricista",
+      "grado": "Licenciado/a en Ciencias de la Ingeniería Eléctrica",
+      "duracion": "10 semestres (5 años)",
+      "regimen": "Diurno",
+      "arancel": 7540000,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 939.45,
+      "minimoSeleccion2027": 822.5,
+      "vacantes2027": 60,
+      "mc2027": 6,
+      "perfilEgreso": "El/la Ingeniero/a Civil Electricista de la Universidad Técnica Federico Santa María resuelve problemas de ingeniería, analizando e integrando información técnica proveniente de la teoría y las mediciones, definiendo alternativas viables y formulando proyectos de ingeniería eléctrica que incluyen soluciones sostenibles e innovadoras, aplicando conocimientos de las ciencias básicas y ciencias de la ingeniería, utilizando herramientas especializadas de aplicaciones y software. Este profesional tiene la capacidad de analizar sistemas de energía y potencia incorporando perspectivas a corto, mediano y largo plazo para las variables consumo, oferta energética y desarrollo tecnológico. Además, está habilitado para planificar y gestionar el desarrollo, operación y mantenimiento de estos sistemas, considerando aspectos específicos de su infraestructura y equipamiento eléctrico. El/La Ingeniero/a Civil Electricista tiene la capacidad de identificar el impacto de sus propuestas en el contexto de la organización, las personas y el medio ambiente, y se asegura que estas aporten al cumplimiento de los objetivos definidos tanto en el ámbito técnico-económico como en el de gestión, considerando los marcos regulatorios y estándares de calidad nacionales e internacionales relevantes para el sector.\n\nSu sólida formación le permite desenvolverse en la industria, organismos públicos y privados e iniciativas de emprendimiento, desempeñándose en las áreas de proyectos, planificación, ingeniería de detalle, instalación, operación y mantenimiento de componentes y sistemas eléctricos. Asimismo, este profesional forma parte de equipos de trabajo que promuevan la colaboración entre disciplinas y áreas STEM. El/La Ingeniero/a Civil Electricista destaca por su compromiso transversal con la calidad, lo cual le permite desenvolverse con excelencia en el campo laboral, comunicándose de manera efectiva tanto en español como en inglés. Por otra parte, promueve el autocuidado, el autodesarrollo y la autogestión a través de un estilo de vida saludable, actuando siempre con una responsabilidad social y ética acorde a los principios inherentes a su profesión y en coherencia con el legado testamentario de Don Federico Santa María.",
+      "malla": {
+        "1": [
+          "Comunicación Efectiva en Español / Inglés I",
+          "Educación Física I",
+          "Proyecto Inicial",
+          "Introducción a la Física",
+          "Introducción al Cálculo",
+          "Álgebra y Geometría"
+        ],
+        "2": [
+          "Comunicación Efectiva en Español / Inglés II",
+          "Educación Física II",
+          "Introducción a la Programación",
+          "Física General Mecánica",
+          "Cálculo en una Variable",
+          "Álgebra Lineal"
+        ],
+        "3": [
+          "Análisis Crítico de Texto",
+          "Elementos de Mecánica y Resistencia de Materiales",
+          "Circuitos Eléctricos I",
+          "Electricidad y Magnetismo",
+          "Cálculo en Varias Variables",
+          "Ecuaciones Diferenciales Elementales"
+        ],
+        "4": [
+          "Comunicación Efectiva en Español / Inglés III",
+          "Estadística Computacional",
+          "Circuitos Eléctricos II",
+          "Teoría Electromagnética",
+          "Sistemas Dinámicos",
+          "Calor y Ondas"
+        ],
+        "5": [
+          "Práctica en Acción Comunitaria",
+          "Administración y Sostenibilidad Organizacional",
+          "Fundamentos de Calor y Fluidos",
+          "Control Automático de Sistemas Eléctricos",
+          "Electrónica General",
+          "Modelación de Equipamiento Eléctrico"
+        ],
+        "6": [
+          "Comunicación Efectiva en Español / Inglés IV",
+          "Economía I-A",
+          "Laboratorio de Circuitos Eléctricos",
+          "Electrónica de Potencia",
+          "Fundamentos de Máquinas Eléctricas",
+          "Simulación Computacional"
+        ],
+        "7": [
+          "Inglés Disciplinar",
+          "Ingeniería Económica",
+          "Investigación de Operaciones",
+          "Alta Tensión",
+          "Máquinas y Accionamientos Eléctricos",
+          "Sistemas de Energía y Potencia"
+        ],
+        "8": [
+          "Taller de Ingeniería",
+          "Gestión de Proyectos",
+          "Ingeniería de Plantas Industriales",
+          "Laboratorio de Alta Tensión",
+          "Laboratorio de Máquinas y Accionamientos Eléctricos",
+          "Sistemas de Distribución de Energía Eléctrica"
+        ],
+        "9": [
+          "Gestión de la Innovación y Emprendimiento",
+          "Proyectos Eléctricos",
+          "Integración de Energías Renovables",
+          "Regulación y Mercado del Sector Eléctrico",
+          "Operación y Control de Sistemas Eléctricos",
+          "Electivo"
+        ],
+        "10": [
+          "Electivo",
+          "Electivo",
+          "Proyecto de Título"
+        ]
+      }
+    },
+    {
+      "codigoDemre": "15131",
+      "nombre": "Ingeniería Civil Electrónica",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 925.9,
+      "minimoSeleccion2027": 747.45,
+      "vacantes2027": 75,
+      "mc2027": 6,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15186",
+      "nombre": "Ingeniería Civil en Biotecnología",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 930.9,
+      "minimoSeleccion2027": 783.15,
+      "vacantes2027": 50,
+      "mc2027": 6,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15184",
+      "nombre": "Ingeniería Civil Física",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 950.05,
+      "minimoSeleccion2027": 728.7,
+      "vacantes2027": 35,
+      "mc2027": 3,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15384",
+      "nombre": "Ingeniería Civil Física",
+      "campus": [
+        "Campus San Joaquín"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 965.4,
+      "minimoSeleccion2027": 783.85,
+      "vacantes2027": 40,
+      "mc2027": 3,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15170",
+      "nombre": "Ingeniería Civil Industrial",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 934.7,
+      "minimoSeleccion2027": 804.8,
+      "vacantes2027": 140,
+      "mc2027": 8,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15270",
+      "nombre": "Ingeniería Civil Industrial",
+      "campus": [
+        "Campus Vitacura"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 929.0,
+      "minimoSeleccion2027": 837.4,
+      "vacantes2027": 140,
+      "mc2027": 8,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15160",
+      "nombre": "Ingeniería Civil Informática",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "Ingeniero Civil Informático o Ingeniera Civil Informática",
+      "grado": "Licenciado/a en Ciencias de la Ingeniería Informática",
+      "duracion": "10 semestres (5 años)",
+      "regimen": "Diurno",
+      "arancel": 7540000,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 944.8,
+      "minimoSeleccion2027": 771.75,
+      "vacantes2027": 120,
+      "mc2027": 24,
+      "perfilEgreso": "El/La Ingeniero/a Civil Informático/a de la Universidad Técnica Federico Santa María se forma para apoyar estratégicamente la mejora continua de las organizaciones, integrando eficientemente a las personas y tecnologías de información. Domina la evaluación y toma de decisiones basadas en técnicas cuantitativas en contextos de incertidumbre, diseñando soluciones de software sostenibles y escalables, reflejando así, su compromiso con la calidad y la innovación. Es capaz de realizar el análisis de sistemas computacionales a nivel de rendimiento, conectividad y seguridad, y diseña soluciones computacionales robustas, aplicando algoritmos y fundamentos teóricos para resolver problemas en ingeniería.\n\nGestiona recursos y promueve mejoras continuas en el ámbito personal y profesional. Tiene la habilidad de liderar equipos colaborativos y comunicarse efectivamente tanto en español como en inglés. Adicionalmente, promueve el autocuidado, el autodesarrollo y la autogestión a través de un estilo de vida saludable, actuando siempre con una responsabilidad social y ética acorde a los principios inherentes a su profesión y en coherencia con el legado testamentario de Don Federico Santa María.",
+      "malla": {
+        "1": [
+          "Comunicación Efectiva en Español / Inglés I",
+          "Educación Física I",
+          "Introducción a la Programación",
+          "Introducción a la Física",
+          "Introducción al Cálculo",
+          "Álgebra y Geometría"
+        ],
+        "2": [
+          "Comunicación Efectiva en Español / Inglés II",
+          "Educación Física II",
+          "Proyecto Inicial",
+          "Física General Mecánica",
+          "Cálculo en una Variable",
+          "Álgebra Lineal"
+        ],
+        "3": [
+          "Análisis Crítico de Texto",
+          "Administración & Sostenibilidad Organizacional",
+          "Calor y Ondas",
+          "Cálculo en Varias Variables",
+          "Programación Avanzada",
+          "Matemática Discreta"
+        ],
+        "4": [
+          "Comunicación Efectiva en Español / Inglés III",
+          "Ingeniería Económica",
+          "Electricidad y Magnetismo",
+          "Ecuaciones Diferenciales Elementales",
+          "Estructura de Datos",
+          "Estadística Computacional"
+        ],
+        "5": [
+          "Ingeniería, Informática y Sociedad",
+          "Teoría de Autómatas y Lenguajes Formales",
+          "Arquitectura y Organización de Computadores",
+          "Paradigmas de Programación",
+          "Bases de Datos",
+          "Optimización"
+        ],
+        "6": [
+          "Comunicación Efectiva en Español / Inglés IV",
+          "Algoritmos y Complejidad",
+          "Sistemas Operativos",
+          "Análisis y Diseño de Software",
+          "Computación Científica",
+          "Investigación de Operaciones"
+        ],
+        "7": [
+          "Inglés Disciplinar",
+          "Teoría de Sistemas",
+          "Redes y Ciberseguridad",
+          "Ingeniería de Software",
+          "Fundamentos de Ciencia de Datos",
+          "Inteligencia Artificial I"
+        ],
+        "8": [
+          "Electivo",
+          "Proyecto de Ingeniería",
+          "Sistemas Distribuidos",
+          "Diseño de Experiencia Usuaria",
+          "Sistemas para la Gestión Organizacional",
+          "Inteligencia Artificial II"
+        ],
+        "9": [
+          "Electivo",
+          "Gestión de Proyectos de Informática",
+          "Electivo Disciplinar",
+          "Electivo Disciplinar",
+          "Electivo Disciplinar"
+        ],
+        "10": [
+          "Taller de Desarrollo de Proyectos de Informática",
+          "Taller Complementario de Titulación",
+          "Electivo Disciplinar",
+          "Electivo Disciplinar"
+        ]
+      }
+    },
+    {
+      "codigoDemre": "15360",
+      "nombre": "Ingeniería Civil Informática",
+      "campus": [
+        "Campus San Joaquín"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "Ingeniero Civil Informático o Ingeniera Civil Informática",
+      "grado": "Licenciado/a en Ciencias de la Ingeniería Informática",
+      "duracion": "10 semestres (5 años)",
+      "regimen": "Diurno",
+      "arancel": 7540000,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 930.9,
+      "minimoSeleccion2027": 820.05,
+      "vacantes2027": 135,
+      "mc2027": 24,
+      "perfilEgreso": "El/La Ingeniero/a Civil Informático/a de la Universidad Técnica Federico Santa María se forma para apoyar estratégicamente la mejora continua de las organizaciones, integrando eficientemente a las personas y tecnologías de información. Domina la evaluación y toma de decisiones basadas en técnicas cuantitativas en contextos de incertidumbre, diseñando soluciones de software sostenibles y escalables, reflejando así, su compromiso con la calidad y la innovación. Es capaz de realizar el análisis de sistemas computacionales a nivel de rendimiento, conectividad y seguridad, y diseña soluciones computacionales robustas, aplicando algoritmos y fundamentos teóricos para resolver problemas en ingeniería.\n\nGestiona recursos y promueve mejoras continuas en el ámbito personal y profesional. Tiene la habilidad de liderar equipos colaborativos y comunicarse efectivamente tanto en español como en inglés. Adicionalmente, promueve el autocuidado, el autodesarrollo y la autogestión a través de un estilo de vida saludable, actuando siempre con una responsabilidad social y ética acorde a los principios inherentes a su profesión y en coherencia con el legado testamentario de Don Federico Santa María.",
+      "malla": {
+        "1": [
+          "Comunicación Efectiva en Español / Inglés I",
+          "Educación Física I",
+          "Introducción a la Programación",
+          "Introducción a la Física",
+          "Introducción al Cálculo",
+          "Álgebra y Geometría"
+        ],
+        "2": [
+          "Comunicación Efectiva en Español / Inglés II",
+          "Educación Física II",
+          "Proyecto Inicial",
+          "Física General Mecánica",
+          "Cálculo en una Variable",
+          "Álgebra Lineal"
+        ],
+        "3": [
+          "Análisis Crítico de Texto",
+          "Administración & Sostenibilidad Organizacional",
+          "Calor y Ondas",
+          "Cálculo en Varias Variables",
+          "Programación Avanzada",
+          "Matemática Discreta"
+        ],
+        "4": [
+          "Comunicación Efectiva en Español / Inglés III",
+          "Ingeniería Económica",
+          "Electricidad y Magnetismo",
+          "Ecuaciones Diferenciales Elementales",
+          "Estructura de Datos",
+          "Estadística Computacional"
+        ],
+        "5": [
+          "Ingeniería, Informática y Sociedad",
+          "Teoría de Autómatas y Lenguajes Formales",
+          "Arquitectura y Organización de Computadores",
+          "Paradigmas de Programación",
+          "Bases de Datos",
+          "Optimización"
+        ],
+        "6": [
+          "Comunicación Efectiva en Español / Inglés IV",
+          "Algoritmos y Complejidad",
+          "Sistemas Operativos",
+          "Análisis y Diseño de Software",
+          "Computación Científica",
+          "Investigación de Operaciones"
+        ],
+        "7": [
+          "Inglés Disciplinar",
+          "Teoría de Sistemas",
+          "Redes y Ciberseguridad",
+          "Ingeniería de Software",
+          "Fundamentos de Ciencia de Datos",
+          "Inteligencia Artificial I"
+        ],
+        "8": [
+          "Electivo",
+          "Proyecto de Ingeniería",
+          "Sistemas Distribuidos",
+          "Diseño de Experiencia Usuaria",
+          "Sistemas para la Gestión Organizacional",
+          "Inteligencia Artificial II"
+        ],
+        "9": [
+          "Electivo",
+          "Gestión de Proyectos de Informática",
+          "Electivo Disciplinar",
+          "Electivo Disciplinar",
+          "Electivo Disciplinar"
+        ],
+        "10": [
+          "Taller de Desarrollo de Proyectos de Informática",
+          "Taller Complementario de Titulación",
+          "Electivo Disciplinar",
+          "Electivo Disciplinar"
+        ]
+      }
+    },
+    {
+      "codigoDemre": "15301",
+      "nombre": "Ingeniería Civil Matemática",
+      "campus": [
+        "Campus San Joaquín"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 984.6,
+      "minimoSeleccion2027": 805.2,
+      "vacantes2027": 35,
+      "mc2027": 3,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15101",
+      "nombre": "Ingeniería Civil Matemática",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 938.85,
+      "minimoSeleccion2027": 805.25,
+      "vacantes2027": 30,
+      "mc2027": 3,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15140",
+      "nombre": "Ingeniería Civil Mecánica",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 940.0,
+      "minimoSeleccion2027": 790.1,
+      "vacantes2027": 75,
+      "mc2027": 6,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15340",
+      "nombre": "Ingeniería Civil Mecánica",
+      "campus": [
+        "Campus San Joaquín"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 910.1,
+      "minimoSeleccion2027": 822.6,
+      "vacantes2027": 75,
+      "mc2027": 6,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15141",
+      "nombre": "Ingeniería Civil Metalúrgica",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 911.65,
+      "minimoSeleccion2027": 749.35,
+      "vacantes2027": 45,
+      "mc2027": 6,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15300",
+      "nombre": "Ingeniería Civil Plan Común",
+      "campus": [
+        "Campus San Joaquín"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 913.25,
+      "minimoSeleccion2027": 825.6,
+      "vacantes2027": 130,
+      "mc2027": 20,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15100",
+      "nombre": "Ingeniería Civil Plan Común",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 921.85,
+      "minimoSeleccion2027": 764.4,
+      "vacantes2027": 110,
+      "mc2027": 20,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15150",
+      "nombre": "Ingeniería Civil Química",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 927.45,
+      "minimoSeleccion2027": 772.35,
+      "vacantes2027": 50,
+      "mc2027": 6,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15350",
+      "nombre": "Ingeniería Civil Química",
+      "campus": [
+        "Campus San Joaquín"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 921.55,
+      "minimoSeleccion2027": 815.4,
+      "vacantes2027": 50,
+      "mc2027": 6,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15161",
+      "nombre": "Ingeniería Civil Telemática",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 899.75,
+      "minimoSeleccion2027": 697.4,
+      "vacantes2027": 35,
+      "mc2027": 6,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15361",
+      "nombre": "Ingeniería Civil Telemática",
+      "campus": [
+        "Campus San Joaquín"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 882.0,
+      "minimoSeleccion2027": 763.3,
+      "vacantes2027": 75,
+      "mc2027": 6,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15111",
+      "nombre": "Ingeniería Civil",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 933.6,
+      "minimoSeleccion2027": 749.2,
+      "vacantes2027": 75,
+      "mc2027": 6,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15311",
+      "nombre": "Ingeniería Civil",
+      "campus": [
+        "Campus San Joaquín"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 905.4,
+      "minimoSeleccion2027": 811.15,
+      "vacantes2027": 75,
+      "mc2027": 6,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15171",
+      "nombre": "Ingeniería Comercial",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Negocios",
+      "exigeM2": false,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 550.0,
+      "maximoSeleccion2027": 939.4,
+      "minimoSeleccion2027": 739.0,
+      "vacantes2027": 120,
+      "mc2027": null,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15271",
+      "nombre": "Ingeniería Comercial",
+      "campus": [
+        "Campus Vitacura"
+      ],
+      "area": "Negocios",
+      "exigeM2": false,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 550.0,
+      "maximoSeleccion2027": 892.75,
+      "minimoSeleccion2027": 799.55,
+      "vacantes2027": 200,
+      "mc2027": null,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15220",
+      "nombre": "Ingeniería en Aviación Comercial",
+      "campus": [
+        "Campus Vitacura"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 550.0,
+      "maximoSeleccion2027": 878.05,
+      "minimoSeleccion2027": 722.7,
+      "vacantes2027": 40,
+      "mc2027": 3,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15485",
+      "nombre": "Ingeniería en Biotecnología",
+      "campus": [
+        "Sede Viña del Mar"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 500.0,
+      "maximoSeleccion2027": 782.25,
+      "minimoSeleccion2027": 644.25,
+      "vacantes2027": 30,
+      "mc2027": 6,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15585",
+      "nombre": "Ingeniería en Biotecnología",
+      "campus": [
+        "Sede Concepción"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 500.0,
+      "maximoSeleccion2027": 822.45,
+      "minimoSeleccion2027": 618.85,
+      "vacantes2027": 20,
+      "mc2027": 3,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15381",
+      "nombre": "Ingeniería en Diseño de Productos",
+      "campus": [
+        "Campus San Joaquín"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 550.0,
+      "maximoSeleccion2027": 907.55,
+      "minimoSeleccion2027": 677.2,
+      "vacantes2027": 30,
+      "mc2027": 4,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15181",
+      "nombre": "Ingeniería en Diseño de Productos",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 550.0,
+      "maximoSeleccion2027": 839.95,
+      "minimoSeleccion2027": 637.1,
+      "vacantes2027": 25,
+      "mc2027": 4,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15441",
+      "nombre": "Ingeniería en Fabricación y Diseño Industrial",
+      "campus": [
+        "Sede Viña del Mar"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 500.0,
+      "maximoSeleccion2027": 836.65,
+      "minimoSeleccion2027": 533.95,
+      "vacantes2027": 20,
+      "mc2027": 4,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15462",
+      "nombre": "Ingeniería en Informática",
+      "campus": [
+        "Sede Viña del Mar"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 500.0,
+      "maximoSeleccion2027": 863.05,
+      "minimoSeleccion2027": 651.8,
+      "vacantes2027": 70,
+      "mc2027": 14,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15562",
+      "nombre": "Ingeniería en Informática",
+      "campus": [
+        "Sede Concepción"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 500.0,
+      "maximoSeleccion2027": 834.25,
+      "minimoSeleccion2027": 549.05,
+      "vacantes2027": 55,
+      "mc2027": 10,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15440",
+      "nombre": "Ingeniería en Mantenimiento Industrial",
+      "campus": [
+        "Sede Viña del Mar"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 500.0,
+      "maximoSeleccion2027": 798.9,
+      "minimoSeleccion2027": 623.75,
+      "vacantes2027": 35,
+      "mc2027": 7,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15540",
+      "nombre": "Ingeniería en Mantenimiento Industrial",
+      "campus": [
+        "Sede Concepción"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 500.0,
+      "maximoSeleccion2027": 766.85,
+      "minimoSeleccion2027": 633.5,
+      "vacantes2027": 20,
+      "mc2027": 3,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15474",
+      "nombre": "Ingeniería en Prevención de Riesgos Laborales y Ambientales",
+      "campus": [
+        "Sede Viña del Mar"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 500.0,
+      "maximoSeleccion2027": 773.9,
+      "minimoSeleccion2027": 601.85,
+      "vacantes2027": 15,
+      "mc2027": 3,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15574",
+      "nombre": "Ingeniería en Prevención de Riesgos Laborales y Ambientales",
+      "campus": [
+        "Sede Concepción"
+      ],
+      "area": "Ingeniería",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 500.0,
+      "maximoSeleccion2027": 719.55,
+      "minimoSeleccion2027": 507.9,
+      "vacantes2027": 15,
+      "mc2027": 3,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15103",
+      "nombre": "Licenciatura en Astrofísica",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Ciencias",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 928.7,
+      "minimoSeleccion2027": 723.45,
+      "vacantes2027": 20,
+      "mc2027": 3,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15303",
+      "nombre": "Licenciatura en Astrofísica",
+      "campus": [
+        "Campus San Joaquín"
+      ],
+      "area": "Ciencias",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 953.75,
+      "minimoSeleccion2027": 748.55,
+      "vacantes2027": 25,
+      "mc2027": 3,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15102",
+      "nombre": "Licenciatura en Física",
+      "campus": [
+        "Campus Casa Central Valparaíso"
+      ],
+      "area": "Ciencias",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 827.65,
+      "minimoSeleccion2027": 683.8,
+      "vacantes2027": 15,
+      "mc2027": 3,
+      "perfilEgreso": "",
+      "malla": null
+    },
+    {
+      "codigoDemre": "15302",
+      "nombre": "Licenciatura en Física",
+      "campus": [
+        "Campus San Joaquín"
+      ],
+      "area": "Ciencias",
+      "exigeM2": true,
+      "titulo": "",
+      "grado": "",
+      "duracion": "",
+      "regimen": "",
+      "arancel": null,
+      "puntajePonderadoMinimo": 600.0,
+      "maximoSeleccion2027": 864.15,
+      "minimoSeleccion2027": 715.65,
+      "vacantes2027": 15,
+      "mc2027": 3,
+      "perfilEgreso": "",
+      "malla": null
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-display: "IBM Plex Serif", Georgia, serif;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --radius: 0.5rem;
+  --background: oklch(0.985 0.004 250);
+  --foreground: oklch(0.22 0.04 255);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.22 0.04 255);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.22 0.04 255);
+  --primary: oklch(0.34 0.11 256);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.95 0.02 250);
+  --secondary-foreground: oklch(0.25 0.06 256);
+  --muted: oklch(0.95 0.01 250);
+  --muted-foreground: oklch(0.45 0.03 255);
+  --accent: oklch(0.84 0.16 88);
+  --accent-foreground: oklch(0.22 0.04 255);
+  --destructive: oklch(0.52 0.2 27);
+  --destructive-foreground: oklch(0.99 0 0);
+  --success: oklch(0.5 0.13 150);
+  --success-foreground: oklch(0.99 0 0);
+  --border: oklch(0.88 0.015 250);
+  --input: oklch(0.8 0.02 250);
+  --ring: oklch(0.55 0.18 256);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3 { font-family: var(--font-display); }
+  :focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 5px var(--primary);
+    border-radius: 4px;
+  }
+}
+
+@utility skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 50;
+  background: var(--accent); color: var(--accent-foreground); padding: 0.5rem 1rem;
+  &:focus { left: 0.5rem; top: 0.5rem; }
+}
+@utility nav-link {
+  white-space: nowrap; padding: 0.4rem 0.75rem; border-radius: var(--radius);
+  font-weight: 500; font-size: 0.95rem;
+  &:hover { background: color-mix(in oklab, var(--primary-foreground) 12%, transparent); }
+}
+@utility nav-link-active {
+  background: var(--accent); color: var(--accent-foreground);
+  &:hover { background: var(--accent); }
+}
+@utility footer-link {
+  display: inline-block; padding: 0.35rem 0.75rem; border-radius: 999px;
+  border: 1px solid color-mix(in oklab, var(--primary-foreground) 40%, transparent);
+  &:hover { background: var(--accent); color: var(--accent-foreground); }
+}
+@utility sede-badge {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  font-size: 0.75rem; font-weight: 600; line-height: 1.2;
+  padding: 0.2rem 0.55rem; border-radius: 999px;
+  background: var(--secondary); color: var(--secondary-foreground);
+  border: 1px solid var(--border);
+  &::before { content: ""; width: 0.45rem; height: 0.45rem; border-radius: 999px; background: var(--primary); }
+}
+@utility field {
+  width: 100%; border: 1px solid var(--input); background: var(--card);
+  border-radius: var(--radius); padding: 0.55rem 0.75rem; font-size: 1rem;
+}
+@utility btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+  border-radius: var(--radius); padding: 0.6rem 1rem; font-weight: 600;
+  background: var(--primary); color: var(--primary-foreground);
+  &:hover { filter: brightness(1.15); }
+  &:disabled { opacity: 0.5; cursor: not-allowed; }
+}
+@utility btn-accent {
+  background: var(--accent); color: var(--accent-foreground);
+}
+@utility btn-ghost {
+  background: transparent; color: var(--primary); border: 1px solid var(--border);
+  &:hover { background: var(--secondary); filter: none; }
+}
+@utility card-box {
+  background: var(--card); color: var(--card-foreground);
+  border: 1px solid var(--border); border-radius: var(--radius);
+}
