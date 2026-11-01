@@ -2,14 +2,21 @@
   "actividades": [
     {
       "id": "maggi-rust-vitacura",
-      "titulo": "Concierto de la cellista austriaca Maggi Rust",
-      "inicio": "2026-10-22",
+      "titulo": "La cellista y cantante austriaca Maggi Rust se presentará en el Campus Vitacura",
+      "inicio": "2026-10-22T12:30",
       "fin": "2026-11-12",
+      "horaFin": "13:30",
       "sede": "Campus Vitacura",
+      "lugar": "Campus Vitacura",
       "modalidad": "Presencial",
-      "organizador": "USM Campus Vitacura",
+      "organizador": "Subdirección de Extensión Cultural y Eventos USM",
+      "publico": "Abierto",
+      "tematica": "Cultura",
+      "contacto": "cultura@usm.cl",
       "cupos": null,
-      "descripcion": "La cellista y cantante austriaca Maggi Rust se presentará en el Campus Vitacura. El sitio original informa solo el rango de fechas; los horarios no están publicados en texto."
+      "afiche": "/actividades/maggi-rust.png",
+      "afícheAlt": "Fotografía en blanco y negro de la cellista Maggi Rust sonriendo mientras toca el violonchelo en un escenario.",
+      "descripcion": "La destacada cellista y cantante austriaca Maggie Rust llegará al Campus Vitacura para presentar una propuesta musical que explora las posibilidades sonoras del violonchelo y la voz.\n\nComo intérprete, ha colaborado con artistas como Inti-Illimani, Nano Stern y Eli Morris, y ha participado en el Festival Internacional de la Canción de Viña del Mar y en Lollapalooza.\n\nEn este concierto, el violonchelo y la voz se entrelazan para crear una experiencia íntima y envolvente, con atmósferas y paisajes musicales. La presentación forma parte de la Temporada de Extensión de Campus y Sedes."
     },
     {
       "id": "taller-fidget-toy",

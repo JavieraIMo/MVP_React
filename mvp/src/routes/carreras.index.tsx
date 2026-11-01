@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { ChipGroup, Layout, NoDisponible, NotaReferencial, SedeBadges } from "@/components/app/Layout";
+import { ChipGroup, Layout, NoDisponible, SedeBadges } from "@/components/app/Layout";
 import { campusDe, carreras, ordenSede } from "@/lib/datos";
 
 export const Route = createFileRoute("/carreras/")({
@@ -45,7 +45,7 @@ function Listado() {
           <input id="q" type="search" autoFocus className="field mt-1" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Ej: Informática o 15160" />
         </div>
         <div className="mt-3 space-y-3">
-          <ChipGroup label="Campus" opciones={campusList} valor={campus} onChange={setCampus} />
+          <ChipGroup label="Sede/Campus" opciones={campusList} valor={campus} onChange={setCampus} />
           <ChipGroup label="Área" opciones={areas} valor={area} onChange={setArea} />
         </div>
         <p className="mt-4 text-sm text-muted-foreground" aria-live="polite">{lista.length} de {carreras.length} carreras</p>
@@ -63,7 +63,6 @@ function Listado() {
             </li>
           ))}
         </ul>
-        <div className="mt-6"><NotaReferencial /></div>
       </div>
     </Layout>
   );

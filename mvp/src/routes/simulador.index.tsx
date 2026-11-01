@@ -1,6 +1,6 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Layout, NotaReferencial } from "@/components/app/Layout";
+import { Layout } from "@/components/app/Layout";
 import { carreras, reglas } from "@/lib/datos";
 import { requiereM2 } from "@/lib/puntaje";
 import { guardarSimulacion, leerSimulacion } from "@/lib/simulacion";
@@ -141,7 +141,6 @@ function Simulador() {
           <button type="submit" className="btn btn-accent">Ver resultados</button>
           <Link to="/" className="btn btn-ghost">Cancelar</Link>
         </div>
-        <div className="mt-6"><NotaReferencial /></div>
       </form>
     </Layout>
   );

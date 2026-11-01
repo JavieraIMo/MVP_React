@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { Layout, NoDisponible, NotaReferencial, SedeBadges } from "@/components/app/Layout";
+import { Layout, NoDisponible, SedeBadges } from "@/components/app/Layout";
 import { campusDe, carreras, formatoArancel, mallaDiezColumnas } from "@/lib/datos";
 import { requiereM2 } from "@/lib/puntaje";
 
@@ -29,19 +29,26 @@ function Dato({ k, v }: { k: string; v: React.ReactNode }) {
   );
 }
 
+function tipoRamo(nombre: string) {
+  if (/^electivo/i.test(nombre)) return "ramo-electivo";
+  if (/^(taller|proyecto|práctica|practica|memoria|trabajo de t)/i.test(nombre)) return "ramo-taller";
+  return "";
+}
+
 function Ficha() {
   const c = Route.useLoaderData();
   const malla = mallaDiezColumnas(c.malla);
   return (
     <Layout>
-      <div className="mx-auto max-w-6xl px-4 py-6">
-        <Link to="/carreras" search={{ q: "" }} className="text-sm text-primary underline">← Volver a carreras</Link>
+      <div className="mx-auto max-w-[110rem] px-4 py-6 2xl:px-8">
+        <div className="max-w-6xl">
+        <Link to="/carreras" search={{ q: "" }} className="btn btn-back">← Volver a carreras</Link>
         <p className="mt-3 text-sm font-semibold text-muted-foreground">Código DEMRE {c.codigoDemre}</p>
         <h1 className="text-2xl font-bold text-primary md:text-3xl">{c.nombre}</h1>
         <div className="mt-2"><SedeBadges sedes={campusDe(c)} /></div>
 
-        <div className="mt-5 grid gap-4 lg:grid-cols-3">
-          <dl className="card-box grid grid-cols-2 gap-4 p-4 lg:col-span-2">
+        <div className="mt-5 grid gap-4 lg:grid-cols-[minmax(0,1fr)_28rem]">
+          <dl className="card-box grid grid-cols-2 gap-4 p-4">
             <Dato k="Título" v={c.titulo} />
             <Dato k="Grado" v={c.grado} />
             <Dato k="Duración" v={c.duracion} />
@@ -53,14 +60,14 @@ function Ficha() {
           <div className="card-box border-t-4 border-t-accent p-4">
             <p className="text-sm text-muted-foreground">Mínimo de selección 2027</p>
             <p className="font-display text-3xl font-bold text-primary">{c.minimoSeleccion2027 ?? <NoDisponible />}</p>
-            <dl className="mt-3 grid grid-cols-2 gap-x-2 gap-y-1 text-sm">
+            <dl className="mt-3 grid grid-cols-[1fr_auto] gap-x-4 gap-y-1 text-sm">
               <dt className="text-muted-foreground">Máximo selección</dt><dd className="text-right font-medium">{c.maximoSeleccion2027 ?? "—"}</dd>
               <dt className="text-muted-foreground">Ponderado mínimo para postular</dt><dd className="text-right font-medium">{c.puntajePonderadoMinimo ?? "—"}</dd>
               <dt className="text-muted-foreground">Vacantes DEMRE</dt><dd className="text-right font-medium">{c.vacantes2027 ?? "—"}</dd>
               <dt className="text-muted-foreground">Cupos Mujeres Científicas</dt><dd className="text-right font-medium">{c.mc2027 ?? "—"}</dd>
             </dl>
             <p className="mt-2 text-xs text-muted-foreground">Los cupos Mujeres Científicas son vacantes adicionales del programa Mujeres Científicas y se suman a las vacantes DEMRE.</p>
-            <Link to="/simulador" search={{ carrera: c.codigoDemre }} className="btn mt-3 w-full">Simular con esta carrera</Link>
+            <Link to="/simulador" search={{ carrera: c.codigoDemre }} className="btn mt-3 w-full">Simular mi puntaje con esta carrera</Link>
           </div>
         </div>
 
@@ -68,24 +75,33 @@ function Ficha() {
           <h2 className="text-xl font-bold">Perfil de egreso</h2>
           <p className="mt-2 max-w-3xl whitespace-pre-line">{c.perfilEgreso || <NoDisponible />}</p>
         </section>
+        </div>
 
         <section className="mt-6">
           <h2 className="text-xl font-bold">Malla curricular</h2>
           <div className="mt-3 overflow-x-auto pb-2" tabIndex={0} aria-label="Malla por semestre, desplazable">
-            <div className="grid min-w-[1100px] grid-cols-10 gap-2">
+            <div className="grid w-max grid-cols-[repeat(10,9.5rem)] gap-3">
               {malla.map((ramos, i) => (
-                <div key={i} className="card-box p-2">
-                  <h3 className="mb-2 rounded bg-primary px-2 py-1 text-center font-sans text-xs font-bold text-primary-foreground">Semestre {i + 1}</h3>
-                  <ul className="space-y-1">
-                    {ramos.length === 0 && <li className="text-xs text-muted-foreground italic">Sin datos</li>}
-                    {ramos.map((r, j) => <li key={j} className="rounded bg-secondary px-2 py-1 text-xs">{r}</li>)}
+                <div key={i} className="flex flex-col gap-2">
+                  <h3 className="rounded bg-primary px-2 py-1.5 text-center font-sans text-xs font-bold text-primary-foreground">Semestre {i + 1}</h3>
+                  <ul className="flex flex-col gap-2">
+                    {ramos.length === 0 && <li className="ramo ramo-vacio">Sin datos</li>}
+                    {ramos.map((r, j) => (
+                      <li key={j} className={`ramo ${tipoRamo(r)}`} title={r}>
+                        <span className="line-clamp-4">{r}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               ))}
             </div>
           </div>
+          <p className="mt-3 flex flex-wrap gap-x-8 gap-y-2 text-base text-foreground">
+            <span className="inline-flex items-center gap-2"><span className="ramo-leyenda" />Asignatura obligatoria</span>
+            <span className="inline-flex items-center gap-2"><span className="ramo-leyenda ramo-electivo" />Electivo</span>
+            <span className="inline-flex items-center gap-2"><span className="ramo-leyenda ramo-taller" />Taller o proyecto</span>
+          </p>
         </section>
-        <div className="mt-6"><NotaReferencial /></div>
       </div>
     </Layout>
   );

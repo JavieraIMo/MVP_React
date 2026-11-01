@@ -28,7 +28,7 @@ function Actividades() {
       <div className="mx-auto max-w-6xl px-4 py-6">
         <h1 className="text-2xl font-bold text-primary">Actividades</h1>
         <div className="mt-4 space-y-3">
-          <ChipGroup label="Sede" opciones={SEDES as unknown as string[]} valor={sede} onChange={setSede} />
+          <ChipGroup label="Sede/Campus" opciones={SEDES.filter((s) => s !== "Online")} valor={sede} onChange={setSede} />
           <ChipGroup label="Modalidad" opciones={modalidades} valor={mod} onChange={setMod} />
         </div>
         <p className="mt-4 text-sm text-muted-foreground" aria-live="polite">{lista.length} de {actividades.length} actividades</p>
@@ -43,7 +43,7 @@ function Actividades() {
                 <Link to="/actividades/$id" params={{ id: a.id }} className="card-box flex h-full flex-col gap-2 p-3 hover:border-primary">
                   <span className="text-sm font-bold text-primary">{formatoFecha(a.inicio, a.fin)}</span>
                   <span className="font-semibold leading-snug">{a.titulo}</span>
-                  <SedeBadge sede={a.sede} />
+                  {normalizarSede(a.sede) !== "Online" && <SedeBadge sede={a.sede} />}
                   <dl className="mt-auto grid grid-cols-2 gap-x-2 text-xs">
                     <dt className="text-muted-foreground">Modalidad</dt><dd>{a.modalidad}</dd>
                     <dt className="text-muted-foreground">Organiza</dt><dd>{a.organizador}</dd>

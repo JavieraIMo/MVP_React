@@ -27,9 +27,14 @@ export type Actividad = {
   titulo: string;
   inicio: string; // ISO "2026-11-03T12:30"
   fin?: string | null; // ISO, para rangos
+  horaFin?: string | null; // "13:30"
   sede: string;
+  lugar?: string | null; // sala, auditorio o dirección
   modalidad: "Presencial" | "Online" | "Híbrida";
   organizador: string;
+  publico?: string | null;
+  tematica?: string | null;
+  contacto?: string | null;
   cupos: number | null;
   descripcion?: string;
   afiche?: string | null;

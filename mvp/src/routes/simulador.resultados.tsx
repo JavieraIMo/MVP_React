@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Layout, NoDisponible, NotaReferencial, SedeBadges } from "@/components/app/Layout";
+import { Layout, NoDisponible, SedeBadges } from "@/components/app/Layout";
 import { campusDe, carreras, reglas } from "@/lib/datos";
 import { cumplePonderadoMinimo, calcularPonderado, cumpleMinimoPostulacion, promedioLectoraM1, requiereM2 } from "@/lib/puntaje";
 import { leerSimulacion, type Simulacion } from "@/lib/simulacion";
@@ -39,7 +39,7 @@ function Resultados() {
   return (
     <Layout>
       <div className="mx-auto max-w-4xl px-4 py-6">
-        <Link to="/simulador" search={{ carrera: undefined }} className="text-sm text-primary underline">← Editar puntajes</Link>
+        <Link to="/simulador" search={{ carrera: undefined }} className="btn btn-back">← Editar puntajes</Link>
         <h1 className="mt-2 text-2xl font-bold text-primary">Resultados de simulación</h1>
 
         {!ok ? (
@@ -105,7 +105,6 @@ function Resultados() {
             );
           })}
         </ol>
-        <div className="mt-6"><NotaReferencial /></div>
       </div>
     </Layout>
   );

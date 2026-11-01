@@ -56,8 +56,7 @@ export function Layout({ children }: { children: ReactNode }) {
             </ul>
           </div>
           <p className="text-sm opacity-85">
-            Admisión 2027. Datos referenciales: el puntaje real depende de la tabla oficial vigente publicada por la USM y el DEMRE.
-            Proyecto académico — Diseño de Interfaces Usuarias.
+            Admisión 2027. Proyecto académico — Diseño de Interfaces Usuarias.
           </p>
         </div>
       </footer>
@@ -70,18 +69,10 @@ export function SedeBadge({ sede }: { sede: string }) {
   return <span className="sede-badge" data-sede={(SEDES as readonly string[]).indexOf(s)}>{s}</span>;
 }
 
-export function NotaReferencial() {
-  return (
-    <p role="note" className="rounded-md border-l-4 border-accent bg-secondary px-3 py-2 text-sm text-secondary-foreground">
-      <strong>Datos referenciales · Admisión 2027.</strong> El puntaje real depende de la tabla oficial vigente.
-    </p>
-  );
-}
-
 export function ChipGroup({ label, opciones, valor, onChange }: { label: string; opciones: string[]; valor: string; onChange: (v: string) => void }) {
   return (
     <div role="group" aria-label={label} className="flex flex-wrap items-center gap-2">
-      <span className="w-24 text-sm font-medium">{label}</span>
+      <span className="w-28 text-sm font-medium">{label}</span>
       {["", ...opciones].map((o) => (
         <button key={o || "todas"} type="button" className="chip" aria-pressed={valor === o} onClick={() => onChange(o)}>
           {o || "Todas"}
