@@ -1,4 +1,4 @@
-# MVP Admisión USM — Tarea 10 (MVP React)
+# MVP Admisión USM — Tarea 10 (React)
 
 Este repositorio contiene el Producto Mínimo Viable desarrollado para el curso de Diseño de Interfaces Usuarias. El objetivo principal es resolver las inconsistencias de usabilidad identificadas en las evaluaciones previas del portal de Admisión de la Universidad Técnica Federico Santa María (USM).
 
