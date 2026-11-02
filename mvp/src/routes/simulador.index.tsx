@@ -105,7 +105,7 @@ function Simulador() {
             <label htmlFor="add" className="sr-only">Agregar carrera</label>
             <select id="add" className="field" value={sel} onChange={(e) => setSel(e.target.value)}>
               <option value="">Selecciona una carrera…</option>
-              {disponibles.map((c) => <option key={c.codigoDemre} value={c.codigoDemre}>{c.nombre} · {c.codigoDemre}</option>)}
+              {disponibles.map((c) => <option key={c.codigoDemre} value={c.codigoDemre}>{c.nombre} ({c.campus}) · {c.codigoDemre}</option>)}
             </select>
             <button type="button" className="btn shrink-0" disabled={!sel || prefs.length >= reglas.maxPreferencias} onClick={() => { setPrefs([...prefs, sel]); setSel(""); }}>Agregar</button>
           </div>
