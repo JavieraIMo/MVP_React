@@ -65,7 +65,10 @@ function Listado() {
   return (
     <Layout>
       <div className="mx-auto max-w-6xl px-4 py-6">
-        <h1 className="text-2xl font-bold text-primary">Carreras</h1>
+        <div className="flex items-center justify-between gap-4">
+          <h1 className="text-3xl font-bold text-primary md:text-4xl">Carreras</h1>
+          <Link to="/" className="btn btn-back">← Volver al inicio</Link>
+        </div>
         <div className="mt-4 max-w-xl">
           <label htmlFor="q" className="text-sm font-medium">Buscar por nombre o código DEMRE</label>
           <input id="q" type="search" autoFocus className="field mt-1" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Ej: Informática o 15160" />
