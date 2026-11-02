@@ -36,10 +36,27 @@ function Resultados() {
   const ok = cumpleMinimoPostulacion(p);
   const prom = promedioLectoraM1(p);
 
+  const estado = (cod: string) => {
+    const c = carreras.find((x) => x.codigoDemre === cod);
+    if (!c) return "sin-dato";
+    const total = calcularPonderado(p, requiereM2(c)).total;
+    if (c.minimoSeleccion2027 == null) return "sin-dato";
+    const alcanza = ok && total >= c.minimoSeleccion2027 && (c.puntajePonderadoMinimo == null || cumplePonderadoMinimo(total, c.puntajePonderadoMinimo));
+    return alcanza ? "si" : "no";
+  };
+  const indexadas = s.preferencias.map((cod, i) => ({ cod, i, e: estado(cod) }));
+  const grupos = [
+    { id: "si", titulo: "Quedas seleccionado", clase: "bg-success text-success-foreground", lista: indexadas.filter((x) => x.e === "si") },
+    { id: "no", titulo: "No alcanza el corte", clase: "bg-destructive text-destructive-foreground", lista: indexadas.filter((x) => x.e === "no") },
+    { id: "sd", titulo: "Sin mínimo de selección disponible", clase: "bg-secondary text-foreground", lista: indexadas.filter((x) => x.e === "sin-dato") },
+  ];
   return (
     <Layout>
-      <div className="mx-auto max-w-4xl px-4 py-6">
-        <Link to="/simulador" search={{ carrera: undefined }} className="btn btn-back">← Editar puntajes</Link>
+      <div className="mx-auto max-w-7xl px-4 py-6 sm:px-8">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <Link to="/simulador" search={{ carrera: undefined }} className="btn btn-back">← Editar puntajes</Link>
+          <Link to="/" className="btn btn-back">Volver al inicio</Link>
+        </div>
         <h1 className="mt-2 text-2xl font-bold text-primary">Resultados de simulación</h1>
 
         {!ok ? (
@@ -53,8 +70,13 @@ function Resultados() {
           </p>
         )}
 
-        <ol className="mt-4 space-y-4">
-          {s.preferencias.map((cod, i) => {
+        <div className="mt-6 grid items-start gap-6 lg:grid-cols-2">
+        {grupos.map((g) => (g.lista.length > 0 || g.id !== "sd") && (
+        <section key={g.id} className={g.id === "sd" ? "lg:col-span-2" : ""} aria-labelledby={`g-${g.id}`}>
+        <h2 id={`g-${g.id}`} className={`inline-block rounded-full px-4 py-1 text-lg font-bold ${g.clase}`}>{g.titulo} ({g.lista.length})</h2>
+        {g.lista.length === 0 && <p className="mt-3 rounded-md border bg-card p-3 text-sm text-muted-foreground">{g.id === "si" ? "Ninguna de tus carreras queda seleccionada con estos puntajes." : "Todas tus carreras quedan seleccionadas."}</p>}
+        <ol className="mt-3 space-y-4">
+          {g.lista.map(({ cod, i }) => {
             const c = carreras.find((x) => x.codigoDemre === cod);
             if (!c) return null;
             const conM2 = requiereM2(c);
@@ -62,11 +84,11 @@ function Resultados() {
             const corte = c.minimoSeleccion2027;
             const dif = corte != null ? Math.round((r.total - corte) * 100) / 100 : null;
             return (
-              <li key={cod} className="card-box p-4">
+              <li key={cod} className={`card-box p-4 ${g.id === "si" ? "border-success bg-[color-mix(in_oklab,var(--success)_14%,white)]" : g.id === "no" ? "border-destructive bg-[color-mix(in_oklab,var(--destructive)_12%,white)]" : ""}`}>
                 <div className="flex flex-wrap items-start justify-between gap-2">
                   <div>
                     <p className="text-xs font-semibold text-muted-foreground">Preferencia {i + 1} · DEMRE {c.codigoDemre}</p>
-                    <h2 className="text-lg font-bold">{c.nombre}</h2>
+                    <h2 className="text-lg font-bold"><Link to="/carreras/$codigo" params={{ codigo: c.codigoDemre }} className="underline-offset-2 hover:underline">{c.nombre}</Link></h2>
                     <SedeBadges sedes={campusDe(c)} />
                   </div>
                   <div className="text-right">
@@ -101,10 +123,16 @@ function Resultados() {
                     </tbody>
                   </table>
                 </div>
+                <div className="mt-3 flex justify-end">
+                  <Link to="/carreras/$codigo" params={{ codigo: c.codigoDemre }} className="btn px-4 py-2 text-sm font-bold">Ver ficha de la carrera →</Link>
+                </div>
               </li>
             );
           })}
         </ol>
+        </section>
+        ))}
+        </div>
       </div>
     </Layout>
   );

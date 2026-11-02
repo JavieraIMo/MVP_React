@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { useState } from "react";
 import { Layout, NoDisponible } from "@/components/app/Layout";
 import { campusDe, carreras, formatoArancel, mallaDiezColumnas, ordenSede } from "@/lib/datos";
 import { requiereM2 } from "@/lib/puntaje";
@@ -52,6 +53,28 @@ function areaRamo(nombre: string): Area {
   return AREAS.especialidad!;
 }
 
+function BotonCopiar() {
+  const [estado, setEstado] = useState<"" | "ok" | "error">("");
+  const copiar = async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      setEstado("ok");
+    } catch {
+      setEstado("error");
+    }
+    setTimeout(() => setEstado(""), 2500);
+  };
+  return (
+    <div className="flex items-center gap-3">
+      <button type="button" className="btn btn-ghost" onClick={copiar}>Copiar enlace</button>
+      <span role="status" aria-live="polite" className="text-sm font-medium">
+        {estado === "ok" && <span className="text-success">¡Enlace copiado!</span>}
+        {estado === "error" && <span className="text-destructive">No se pudo copiar. Copia la dirección del navegador.</span>}
+      </span>
+    </div>
+  );
+}
+
 function Ficha() {
   const base = Route.useLoaderData();
   const variantes = carreras
@@ -63,12 +86,15 @@ function Ficha() {
   return (
     <Layout>
       <div className="mx-auto max-w-[110rem] px-4 py-6 2xl:px-8">
-        <Link to="/carreras" search={{ q: "" }} className="btn btn-back">← Volver a carreras</Link>
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <Link to="/carreras" search={{ q: "" }} className="btn btn-back">← Volver a carreras</Link>
+          <BotonCopiar />
+        </div>
         <h1 className="mt-3 text-2xl font-bold text-primary md:text-3xl">{base.nombre}</h1>
 
         <div className="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,38rem)]">
           <div>
-            <dl className="card-box grid grid-cols-2 gap-4 p-4">
+            <dl className="card-box grid grid-cols-2 gap-4 bg-[color-mix(in_oklab,var(--primary)_14%,white)] p-4">
               <Dato k="Título" v={c.titulo} />
               <Dato k="Grado" v={c.grado} />
               <Dato k="Duración" v={c.duracion} />
@@ -88,7 +114,7 @@ function Ficha() {
             </h2>
             <div className="mt-3 grid gap-4">
               {variantes.map((v) => (
-                <article key={v.codigoDemre} className="card-box flex flex-col border-t-4 border-t-accent p-4">
+                <article key={v.codigoDemre} className="card-box flex flex-col border-t-4 border-t-accent bg-[color-mix(in_oklab,var(--primary)_14%,white)] p-4">
                   <h3 className="font-sans text-base font-bold text-primary">{campusDe(v).join(", ")}</h3>
                   <p className="text-sm text-muted-foreground">Código DEMRE {v.codigoDemre}</p>
                   <p className="mt-3 text-sm text-muted-foreground">Mínimo de selección 2027</p>
