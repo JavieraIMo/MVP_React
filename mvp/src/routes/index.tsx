@@ -141,7 +141,9 @@ function ProximasActividades() {
                     {a.lugar && a.lugar !== a.sede ? ` · ${a.lugar}` : ""}
                   </p>
                   <p><span className="font-bold text-primary">Modalidad:</span> {a.modalidad}</p>
-                  <Link to="/actividades/$id" params={{ id: a.id }} className="btn btn-back">Ver detalle completo →</Link>
+                  <div className="flex justify-end">
+                    <Link to="/actividades/$id" params={{ id: a.id }} className="btn btn-back">Ver detalle completo →</Link>
+                  </div>
                 </div>
               </details>
             </li>
@@ -155,11 +157,11 @@ function ProximasActividades() {
 function FechasClave() {
   return (
     <section aria-labelledby="fechas-clave">
-      <h2 id="fechas-clave" className="text-xl font-bold text-primary">Fechas clave del proceso</h2>
+      <h2 id="fechas-clave" className="text-xl font-bold text-primary">Fechas clave del proceso de admisión</h2>
       {fechasClave.length === 0 ? (
-        <p className="card-box mt-3 p-4 text-sm text-muted-foreground">
+        <p className="card-box mt-3 border-l-8 border-l-accent bg-[color-mix(in_oklab,var(--accent)_30%,white)] p-4 text-base font-medium text-foreground">
           Las fechas oficiales del proceso de admisión 2027 se publican en{" "}
-          <a href="https://demre.cl" target="_blank" rel="noreferrer" className="font-semibold text-primary underline">demre.cl</a>.
+          <a href="https://demre.cl" target="_blank" rel="noreferrer" className="font-bold underline">demre.cl</a>.
         </p>
       ) : (
         <ol className="mt-3 space-y-2">
