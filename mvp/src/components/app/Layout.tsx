@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
+import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import { SEDES, normalizarSede } from "@/lib/datos";
 
 const NAV = [
@@ -9,13 +10,42 @@ const NAV = [
   { to: "/actividades", label: "Actividades" },
 ] as const;
 
-const REDES = [
+export const REDES = [
   { label: "Instagram", href: "https://www.instagram.com/usantamaria/" },
   { label: "Facebook", href: "https://www.facebook.com/usantamaria" },
   { label: "X", href: "https://x.com/usantamaria" },
   { label: "YouTube", href: "https://www.youtube.com/channel/UCr5rEvayXIC0YnJxDAWuWtQ" },
   { label: "LinkedIn", href: "https://www.linkedin.com/school/usantamaria/" },
 ];
+
+function IconoX() {
+  return (
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" aria-hidden="true">
+      <path d="M4 4l16 16M20 4L4 20" />
+    </svg>
+  );
+}
+
+export function IconoRed({ label }: { label: string }) {
+  const p = { size: 20, "aria-hidden": true } as const;
+  if (label === "Instagram") return <Instagram {...p} />;
+  if (label === "Facebook") return <Facebook {...p} />;
+  if (label === "YouTube") return <Youtube {...p} />;
+  if (label === "LinkedIn") return <Linkedin {...p} />;
+  return <IconoX />;
+}
+
+export function RedesOficiales({ className = "" }: { className?: string }) {
+  return (
+    <ul className={`flex flex-wrap gap-2 ${className}`}>
+      {REDES.map((r) => (
+        <li key={r.label}>
+          <a href={r.href} target="_blank" rel="noreferrer" className="footer-link">{r.label}</a>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 export function Layout({ children }: { children: ReactNode }) {
   return (
@@ -47,13 +77,7 @@ export function Layout({ children }: { children: ReactNode }) {
         <div className="mx-auto grid max-w-6xl gap-6 px-4 py-8 sm:grid-cols-2">
           <div>
             <p className="font-display font-bold">Redes oficiales USM</p>
-            <ul className="mt-2 flex flex-wrap gap-2">
-              {REDES.map((r) => (
-                <li key={r.label}>
-                  <a href={r.href} target="_blank" rel="noreferrer" className="footer-link">{r.label}</a>
-                </li>
-              ))}
-            </ul>
+            <RedesOficiales className="mt-2" />
           </div>
           <p className="text-sm opacity-85">
             Admisión 2027. Proyecto académico — Diseño de Interfaces Usuarias.

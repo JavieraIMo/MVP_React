@@ -1,5 +1,6 @@
 import carrerasJson from "@/data/carreras.json";
 import actividadesJson from "@/data/actividades.json";
+import fechasClaveJson from "@/data/fechasClave.json";
 
 export type Carrera = {
   codigoDemre: string;
@@ -22,9 +23,13 @@ export type Carrera = {
   malla: Record<string, string[]> | string[][] | null;
 };
 
+export const TIPOS_ACTIVIDAD = ["Charla", "Taller", "Feria", "Panel", "Congreso", "Cultura"] as const;
+export type TipoActividad = (typeof TIPOS_ACTIVIDAD)[number];
+
 export type Actividad = {
   id: string;
   titulo: string;
+  tipo: TipoActividad;
   inicio: string; // ISO "2026-11-03T12:30"
   fin?: string | null; // ISO, para rangos
   horaFin?: string | null; // "13:30"
@@ -46,6 +51,18 @@ export const ponderaciones = carrerasJson.ponderaciones;
 export const reglas = carrerasJson.reglas;
 export const carreras = carrerasJson.carreras as Carrera[];
 export const actividades = (actividadesJson.actividades ?? []) as Actividad[];
+
+export type FechaClave = { hito: string; fecha: string; detalle?: string };
+export const fechasClave = (fechasClaveJson.fechas ?? []) as FechaClave[];
+
+/** Actividades que aún no terminan, ordenadas por inicio. */
+export function proximasActividades(hoy: Date, max: number): Actividad[] {
+  const iso = `${hoy.getFullYear()}-${String(hoy.getMonth() + 1).padStart(2, "0")}-${String(hoy.getDate()).padStart(2, "0")}`;
+  return actividades
+    .filter((a) => (a.fin ?? a.inicio).slice(0, 10) >= iso)
+    .sort((a, b) => a.inicio.localeCompare(b.inicio))
+    .slice(0, max);
+}
 
 export const SEDES = [
   "Sede Viña del Mar",

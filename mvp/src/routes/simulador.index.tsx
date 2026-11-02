@@ -70,9 +70,9 @@ function Simulador() {
   };
 
   const input = (k: Campo, label: string, opcional = false) => (
-    <div className="grid items-center gap-1 sm:grid-cols-[17rem_7rem] sm:gap-4">
-      <label htmlFor={k} className="text-sm font-medium">
-        {label} ({min}–{max} puntos){opcional ? <span className="text-muted-foreground"> · opcional</span> : <span className="text-destructive" aria-hidden="true"> *</span>}
+    <div className="grid items-center gap-1 sm:grid-cols-[minmax(0,1fr)_7rem] sm:gap-4">
+      <label htmlFor={k} className="whitespace-nowrap text-sm font-medium">
+        {label}{opcional ? <span className="text-muted-foreground"> · opcional</span> : <span className="text-destructive" aria-hidden="true"> *</span>}
       </label>
       <input
         id={k}
@@ -94,24 +94,13 @@ function Simulador() {
 
   return (
     <Layout>
-      <form onSubmit={enviar} className="mx-auto max-w-4xl px-4 py-6" noValidate>
+      <form onSubmit={enviar} className="mx-auto max-w-7xl px-4 py-6 sm:px-8" noValidate>
         <h1 className="text-2xl font-bold text-primary">Simulador de puntaje</h1>
         <p className="mt-1 text-sm text-muted-foreground">Los campos con <span className="text-destructive">*</span> son obligatorios. Se usa la mejor prueba entre Ciencias e Historia.</p>
 
-        <fieldset className="card-box mt-4 grid gap-4 p-4">
-          <legend className="px-1 font-semibold">1. Tus puntajes</legend>
-          {input("nem", "NEM")}
-          {input("ranking", "Ranking")}
-          {input("lectora", "Competencia Lectora")}
-          {input("m1", "Matemática M1")}
-          {necesitaM2 && input("m2", "Matemática M2")}
-          {necesitaM2 && <p className="text-sm text-muted-foreground">M2 es obligatoria para al menos una de las carreras elegidas.</p>}
-          {input("ciencias", "Ciencias", true)}
-          {input("historia", "Historia y Ciencias Sociales", true)}
-        </fieldset>
-
-        <fieldset className="card-box mt-4 p-4">
-          <legend className="px-1 font-semibold">2. Carreras por orden de preferencia ({prefs.length}/{reglas.maxPreferencias})</legend>
+        <div className="mt-4 grid items-start gap-6 lg:grid-cols-2">
+        <fieldset className="card-box p-4">
+          <legend className="px-1 font-semibold">1. Carreras por orden de preferencia ({prefs.length}/{reglas.maxPreferencias})</legend>
           <div className="flex gap-2">
             <label htmlFor="add" className="sr-only">Agregar carrera</label>
             <select id="add" className="field" value={sel} onChange={(e) => setSel(e.target.value)}>
@@ -135,6 +124,20 @@ function Simulador() {
             })}
           </ol>
         </fieldset>
+
+        <fieldset className="card-box grid gap-4 p-4">
+          <legend className="px-1 font-semibold">2. Tus puntajes</legend>
+          <p className="text-sm text-muted-foreground">Cada puntaje va entre {min} y {max} puntos.</p>
+          {input("nem", "NEM")}
+          {input("ranking", "Ranking")}
+          {input("lectora", "Competencia Lectora")}
+          {input("m1", "Matemática M1")}
+          {necesitaM2 && input("m2", "Matemática M2")}
+          {necesitaM2 && <p className="text-sm text-muted-foreground">M2 es obligatoria para al menos una de las carreras elegidas.</p>}
+          {input("ciencias", "Ciencias", true)}
+          {input("historia", "Historia y Ciencias Sociales", true)}
+        </fieldset>
+        </div>
 
         {err && <p role="alert" className="mt-4 rounded-md bg-destructive px-3 py-2 text-destructive-foreground">{err}</p>}
         <div className="mt-4 flex flex-wrap gap-2">

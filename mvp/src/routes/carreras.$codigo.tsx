@@ -78,7 +78,7 @@ function Ficha() {
             </dl>
             <section className="mt-6">
               <h2 className="text-xl font-bold">Perfil de egreso</h2>
-              <p className="mt-2 max-w-3xl whitespace-pre-line">{c.perfilEgreso || <NoDisponible />}</p>
+              <p className="mt-2 whitespace-pre-line text-justify text-lg leading-relaxed hyphens-auto" lang="es">{c.perfilEgreso || <NoDisponible />}</p>
             </section>
           </div>
 

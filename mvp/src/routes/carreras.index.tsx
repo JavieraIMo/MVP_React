@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { ChipGroup, Layout, NoDisponible, SedeBadges } from "@/components/app/Layout";
+import { ChipGroup, Layout, SedeBadges } from "@/components/app/Layout";
 import { campusDe, carreras, ordenSede } from "@/lib/datos";
 
 export const Route = createFileRoute("/carreras/")({
@@ -17,6 +17,23 @@ export const Route = createFileRoute("/carreras/")({
 });
 
 const quitar = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+const slug = (s: string) => quitar(s).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+const FONDO_AREA: Record<string, string> = {
+  "Arquitectura y Construcción": "from-amber-700 to-stone-800",
+  Ciencias: "from-violet-700 to-indigo-900",
+  Ingeniería: "from-blue-700 to-slate-900",
+  Negocios: "from-emerald-700 to-teal-900",
+};
+
+// Foto en /public/carreras/<slug>.png; si no existe, se muestra un fondo por área.
+function ImagenCarrera({ nombre, area }: { nombre: string; area: string }) {
+  const [falla, setFalla] = useState(false);
+  if (falla) {
+    return <div aria-hidden="true" className={`h-28 w-full bg-gradient-to-br ${FONDO_AREA[area] ?? "from-blue-700 to-slate-900"}`} />;
+  }
+  return <img src={`/carreras/${slug(nombre)}.png`} alt="" loading="lazy" onError={() => setFalla(true)} className="h-28 w-full object-cover" />;
+}
 
 function Listado() {
   const { q: q0 } = Route.useSearch();
@@ -60,21 +77,21 @@ function Listado() {
         <p className="mt-4 text-sm text-muted-foreground" aria-live="polite">{grupos.length} carreras ({lista.length} de {carreras.length} opciones de ingreso)</p>
         <ul className="mt-2 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {grupos.map((g) => (
-            <li key={g.nombre} className="card-box flex h-full flex-col p-4">
+            <li key={g.nombre} className="card-box lift flex h-full flex-col overflow-hidden">
+              <ImagenCarrera nombre={g.nombre} area={g.variantes[0]!.area} />
+              <div className="flex flex-1 flex-col p-4">
               <h2 className="font-display text-lg font-semibold text-primary">{g.nombre}</h2>
               <ul className="mt-2 divide-y">
                 {g.variantes.map((c) => (
                   <li key={c.codigoDemre}>
                     <Link to="/carreras/$codigo" params={{ codigo: c.codigoDemre }} className="flex flex-col gap-1 py-2 hover:bg-muted/50">
                       <SedeBadges sedes={campusDe(c)} />
-                      <span className="text-sm">
-                        <span className="text-muted-foreground">Código DEMRE {c.codigoDemre} · Mínimo selección 2027:</span>{" "}
-                        <span className="font-semibold">{c.minimoSeleccion2027 ?? <NoDisponible />}</span>
-                      </span>
+                      <span className="text-sm text-muted-foreground">Código DEMRE {c.codigoDemre}</span>
                     </Link>
                   </li>
                 ))}
               </ul>
+              </div>
             </li>
           ))}
         </ul>

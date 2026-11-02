@@ -2,6 +2,7 @@
   "actividades": [
     {
       "id": "maggi-rust-vitacura",
+      "tipo": "Cultura",
       "titulo": "La cellista y cantante austriaca Maggi Rust se presentará en el Campus Vitacura",
       "inicio": "2026-10-22T12:30",
       "fin": "2026-11-12",
@@ -20,6 +21,7 @@
     },
     {
       "id": "taller-fidget-toy",
+      "tipo": "Taller",
       "titulo": "Taller «¡Crea tu propio fidget toy!»: un apoyo sensorial",
       "inicio": "2026-10-27T12:20",
       "fin": "2026-11-03",
@@ -34,6 +36,7 @@
     },
     {
       "id": "taller-instalaciones-electricas",
+      "tipo": "Taller",
       "titulo": "Taller de Instalaciones Eléctricas Domiciliarias",
       "inicio": "2026-10-30T12:30",
       "fin": "2026-11-07",
@@ -47,6 +50,7 @@
     },
     {
       "id": "taller-autocuidado-bienestar",
+      "tipo": "Taller",
       "titulo": "Taller «Autocuidado y bienestar emocional para estudiantes universitarios»",
       "inicio": "2026-11-02T09:40",
       "fin": "2026-11-30",
@@ -58,6 +62,7 @@
     },
     {
       "id": "charla-mineria-4-0",
+      "tipo": "Charla",
       "titulo": "Charla «Chile ante la nueva era de la minería: convergencia tecnológica, capital humano y ecosistemas virtuales de innovación»",
       "inicio": "2026-11-03T12:30",
       "sede": "Sede Viña del Mar",
@@ -68,6 +73,7 @@
     },
     {
       "id": "panel-expertos-construccion",
+      "tipo": "Panel",
       "titulo": "Panel de Expertos – Semana del Dpto. de Construcción y Prevención de Riesgos",
       "inicio": "2026-11-03T08:30",
       "sede": "Sede Concepción",
@@ -78,6 +84,7 @@
     },
     {
       "id": "charla-magister-electronica",
+      "tipo": "Charla",
       "titulo": "Charla informativa Magíster en Ciencias de la Ingeniería Electrónica y Doctorado en Ingeniería Electrónica",
       "inicio": "2026-11-03T12:30",
       "sede": "Campus Casa Central Valparaíso",
@@ -88,6 +95,7 @@
     },
     {
       "id": "feria-gobierno-en-terreno",
+      "tipo": "Feria",
       "titulo": "Feria Gobierno en Terreno 2026",
       "inicio": "2026-11-03T10:00",
       "sede": "Sede Viña del Mar",
@@ -98,6 +106,7 @@
     },
     {
       "id": "taller-normas-tecnicas-patentes",
+      "tipo": "Taller",
       "titulo": "Taller «Búsqueda y uso de normas técnicas, marcas y patentes»",
       "inicio": "2026-11-03T12:30",
       "sede": "Online",
@@ -108,6 +117,7 @@
     },
     {
       "id": "charlas-prev-2026",
+      "tipo": "Charla",
       "titulo": "Charlas PREV 2026: «Del aula a la profesión»",
       "inicio": "2026-11-03T08:30",
       "sede": "Sede Viña del Mar",
@@ -118,6 +128,7 @@
     },
     {
       "id": "congreso-comites-paritarios",
+      "tipo": "Congreso",
       "titulo": "XXVI Congreso de Comités Paritarios Universidades Chilenas «Aprender, conectar y avanzar»",
       "inicio": "2026-11-04",
       "fin": "2026-11-07",
@@ -130,6 +141,7 @@
     },
     {
       "id": "crazy-legs-lindy-hop",
+      "tipo": "Cultura",
       "titulo": "Crazy Legs llevará el ritmo del Lindy Hop al Campus San Joaquín",
       "inicio": "2026-11-05",
       "sede": "Campus San Joaquín",
