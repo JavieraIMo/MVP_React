@@ -1,5 +1,10 @@
 # MVP Admisión USM — Tarea 10 (React)
 
+![React](https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38BDF8?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Status](https://img.shields.io/badge/Entrega-Tarea_10_MVP-success?style=for-the-badge)
+
 Este repositorio contiene el Producto Mínimo Viable (MVP) desarrollado para el curso de Diseño de Interfaces Usuarias. El objetivo principal es resolver las inconsistencias de usabilidad identificadas en las evaluaciones previas del portal de Admisión de la Universidad Técnica Federico Santa María (USM).
 
 ---
